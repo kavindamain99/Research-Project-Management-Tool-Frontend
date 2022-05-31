@@ -25318,7 +25318,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","./Admin/Dashboard":"hZJWK","./Supervisor/signUp":"fbVZF","./Supervisor/signIn":"8qgFA","./Supervisor/topics":"5NEM4","./Supervisor/topic":"eunr2","./PanelMember/signUp":"8SnbO","./PanelMember/signIn":"486F7","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./PanelMember/topics":"cIfdC"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","./Admin/Dashboard":"hZJWK","./Supervisor/signUp":"fbVZF","./Supervisor/signIn":"8qgFA","./Supervisor/topics":"5NEM4","./Supervisor/topic":"eunr2","./PanelMember/signUp":"8SnbO","./PanelMember/signIn":"486F7","./PanelMember/topics":"cIfdC","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -28773,7 +28773,7 @@ $RefreshReg$(_c, "SupervisorTopics");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./Auth/topics":"aJaGA","./styles.css":"gPVyL","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-router-dom":"kjA5T"}],"aJaGA":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./Auth/topics":"aJaGA","react-router-dom":"kjA5T","./styles.css":"gPVyL","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"aJaGA":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getTopics", ()=>getTopics
@@ -33342,7 +33342,7 @@ $RefreshReg$(_c, "PanelMemberTopics");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./Auth/topics":"5mYEI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-router-dom":"kjA5T"}],"5mYEI":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./Auth/topics":"5mYEI","react-router-dom":"kjA5T","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"5mYEI":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getTopics", ()=>getTopics
