@@ -25203,19 +25203,30 @@ var _markingSchema = require("./Admin/markingSchema");
 var _markingSchemaDefault = parcelHelpers.interopDefault(_markingSchema);
 var _presentationManagement = require("./Admin/presentationManagement");
 var _presentationManagementDefault = parcelHelpers.interopDefault(_presentationManagement);
+//student route
+var _signup = require("./Student/signup");
+var _signupDefault = parcelHelpers.interopDefault(_signup);
+var _signin = require("./Student/signin");
+var _signinDefault = parcelHelpers.interopDefault(_signin);
+var _groupRegistration = require("./Student/groupRegistration");
+var _groupRegistrationDefault = parcelHelpers.interopDefault(_groupRegistration);
+var _topicRegistration = require("./Student/topicRegistration");
+var _topicRegistrationDefault = parcelHelpers.interopDefault(_topicRegistration);
+var _submission = require("./Student/submission");
+var _submissionDefault = parcelHelpers.interopDefault(_submission);
 function Main() {
     return(/*#__PURE__*/ _jsxRuntime.jsx(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
                 __source: {
                     fileName: "components/main.jsx",
-                    lineNumber: 17
+                    lineNumber: 25
                 },
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Routes, {
                     __source: {
                         fileName: "components/main.jsx",
-                        lineNumber: 18
+                        lineNumber: 26
                     },
                     __self: this,
                     children: [
@@ -25225,7 +25236,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 19
+                                lineNumber: 27
                             },
                             __self: this
                         }),
@@ -25235,7 +25246,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 20
+                                lineNumber: 28
                             },
                             __self: this
                         }),
@@ -25245,7 +25256,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 21
+                                lineNumber: 29
                             },
                             __self: this
                         }),
@@ -25255,7 +25266,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 22
+                                lineNumber: 30
                             },
                             __self: this
                         }),
@@ -25265,7 +25276,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 23
+                                lineNumber: 31
                             },
                             __self: this
                         }),
@@ -25275,7 +25286,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 24
+                                lineNumber: 32
                             },
                             __self: this
                         }),
@@ -25285,7 +25296,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 29
+                                lineNumber: 37
                             },
                             __self: this
                         }),
@@ -25295,7 +25306,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 30
+                                lineNumber: 38
                             },
                             __self: this
                         }),
@@ -25305,7 +25316,57 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 35
+                                lineNumber: 43
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/signup",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_signupDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 49
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/submission",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_submissionDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 51
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_signinDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 52
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/topic/registration",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_topicRegistrationDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 53
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/group/registration",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_groupRegistrationDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 58
                             },
                             __self: this
                         })
@@ -25325,7 +25386,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD","./Student/signup":"l6njT","./Student/signin":"2cTWS","./Student/groupRegistration":"4fDOH","./Student/topicRegistration":"e6iYD","./Student/submission":"6fUxi"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -46867,7 +46928,7 @@ function SubmissionManagement() {
                     degree: degree
                 }),
                 headers: {
-                    "content-type": "application/json"
+                    "Content-type": "application/json"
                 }
             });
             const resJson = await res.json();
@@ -51886,6 +51947,2347 @@ $RefreshReg$(_c, "PresentationManagement");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"l6njT":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b866 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b866.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./core/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _config = require("./config");
+var _s = $RefreshSig$();
+function SignUp() {
+    _s();
+    const [firstName, setFirstName] = _react.useState("");
+    const [lastName, setLastName] = _react.useState("");
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const [cotactNum, setCotactNum] = _react.useState("");
+    const [studentId, setStudentId] = _react.useState("");
+    const [degree, setDegree] = _react.useState("");
+    handleSignUp = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/auth/register`, {
+                method: "POST",
+                body: JSON.stringify({
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    password: password,
+                    contactNum: cotactNum,
+                    studentId: studentId,
+                    degree: degree
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const resJson = await res.json();
+            if (resJson) Swal.fire("Registration", "Student Registered Successfully!", "success");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/signup.jsx",
+            lineNumber: 45
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/signup.jsx",
+                    lineNumber: 46
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("section", {
+                className: "vh-100",
+                __source: {
+                    fileName: "components/Student/signup.jsx",
+                    lineNumber: 47
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "container py-5 h-100",
+                    __source: {
+                        fileName: "components/Student/signup.jsx",
+                        lineNumber: 48
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        className: "row justify-content-center align-items-center h-100",
+                        __source: {
+                            fileName: "components/Student/signup.jsx",
+                            lineNumber: 49
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                            className: "col-12 col-lg-9 col-xl-7",
+                            __source: {
+                                fileName: "components/Student/signup.jsx",
+                                lineNumber: 50
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                className: "card shadow-2-strong card-registration",
+                                style: {
+                                    borderRadius: "15px"
+                                },
+                                __source: {
+                                    fileName: "components/Student/signup.jsx",
+                                    lineNumber: 51
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                    className: "card-body p-4 p-md-5",
+                                    __source: {
+                                        fileName: "components/Student/signup.jsx",
+                                        lineNumber: 55
+                                    },
+                                    __self: this,
+                                    children: [
+                                        /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                            className: "mb-4 pb-2 pb-md-0 mb-md-5",
+                                            style: {
+                                                textAlign: "center"
+                                            },
+                                            __source: {
+                                                fileName: "components/Student/signup.jsx",
+                                                lineNumber: 56
+                                            },
+                                            __self: this,
+                                            children: "Student Sign Up"
+                                        }),
+                                        /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                                            className: "row g-3 needs-validation",
+                                            noValidate: true,
+                                            onSubmit: handleSignUp,
+                                            __source: {
+                                                fileName: "components/Student/signup.jsx",
+                                                lineNumber: 62
+                                            },
+                                            __self: this,
+                                            children: [
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 67
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "first-name",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 68
+                                                            },
+                                                            __self: this,
+                                                            children: "First name"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            id: "first-name",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setFirstName(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 71
+                                                            },
+                                                            __self: this
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                            className: "invalid-feedback",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 80
+                                                            },
+                                                            __self: this,
+                                                            children: "Please provide a first name"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 84
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "last-name",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 85
+                                                            },
+                                                            __self: this,
+                                                            children: "Last name"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            id: "last-name",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setLastName(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 88
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-12",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 98
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "email",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 99
+                                                            },
+                                                            __self: this,
+                                                            children: "Email"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "email",
+                                                            className: "form-control",
+                                                            id: "email",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setEmail(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 102
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 112
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "password",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 113
+                                                            },
+                                                            __self: this,
+                                                            children: "Password"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "password",
+                                                            className: "form-control",
+                                                            id: "password",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setPassword(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 116
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 127
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "contact-number",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 128
+                                                            },
+                                                            __self: this,
+                                                            children: "Contact number"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "tel",
+                                                            className: "form-control",
+                                                            id: "contact-number",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setCotactNum(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 131
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 142
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "password",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 143
+                                                            },
+                                                            __self: this,
+                                                            children: "Student ID"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            id: "studentId",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setStudentId(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 146
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 157
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            className: "form-check-label",
+                                                            htmlFor: "degree",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 158
+                                                            },
+                                                            __self: this,
+                                                            children: "Degree"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "form-check",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 161
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "radio",
+                                                                    className: "form-check-input",
+                                                                    id: "radio3",
+                                                                    name: "degree",
+                                                                    value: "computing",
+                                                                    onChange: (e)=>setDegree(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 162
+                                                                    },
+                                                                    __self: this
+                                                                }),
+                                                                "Computing",
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    className: "form-check-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 170
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "form-check",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 172
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "radio",
+                                                                    className: "form-check-input",
+                                                                    id: "radio3",
+                                                                    name: "degree",
+                                                                    value: "buisness",
+                                                                    onChange: (e)=>setDegree(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 173
+                                                                    },
+                                                                    __self: this
+                                                                }),
+                                                                "Buisness",
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    className: "form-check-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 181
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "form-check",
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 183
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "radio",
+                                                                    className: "form-check-input",
+                                                                    id: "radio3",
+                                                                    name: "degree",
+                                                                    value: "engineering",
+                                                                    onChange: (e)=>setDegree(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 184
+                                                                    },
+                                                                    __self: this
+                                                                }),
+                                                                "Engineering",
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    className: "form-check-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/signup.jsx",
+                                                                        lineNumber: 192
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        " ",
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                                                            __source: {
+                                                                fileName: "components/Student/signup.jsx",
+                                                                lineNumber: 194
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                    className: "col-12",
+                                                    __source: {
+                                                        fileName: "components/Student/signup.jsx",
+                                                        lineNumber: 197
+                                                    },
+                                                    __self: this,
+                                                    children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                                        className: "btn btn-primary",
+                                                        type: "submit",
+                                                        __source: {
+                                                            fileName: "components/Student/signup.jsx",
+                                                            lineNumber: 198
+                                                        },
+                                                        __self: this,
+                                                        children: "Sign Up"
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        ]
+    }));
+}
+exports.default = SignUp;
+_s(SignUp, "kpDifsHkuLvFLypXFKqPu6ZP08g=");
+_c = SignUp;
+var _c;
+$RefreshReg$(_c, "SignUp");
+
+  $parcel$ReactRefreshHelpers$b866.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./core/navbar":"fYqCb","./config":"4csCI"}],"fYqCb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$965e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$965e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _navbarCss = require("./navbar.css");
+function NavBar() {
+    return(/*#__PURE__*/ _jsxRuntime.jsx(_jsxRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("nav", {
+                className: "navbar",
+                __source: {
+                    fileName: "components/Student/core/navbar.jsx",
+                    lineNumber: 8
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "nav-container",
+                    __source: {
+                        fileName: "components/Student/core/navbar.jsx",
+                        lineNumber: 9
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "row"
+                        },
+                        __source: {
+                            fileName: "components/Student/core/navbar.jsx",
+                            lineNumber: 10
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/core/navbar.jsx",
+                                    lineNumber: 11
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/",
+                                    className: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/core/navbar.jsx",
+                                        lineNumber: 12
+                                    },
+                                    __self: this,
+                                    children: "Sign In"
+                                })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/core/navbar.jsx",
+                                    lineNumber: 16
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/signup",
+                                    className: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/core/navbar.jsx",
+                                        lineNumber: 17
+                                    },
+                                    __self: this,
+                                    children: "Sign up"
+                                })
+                            })
+                        ]
+                    })
+                })
+            })
+        ]
+    }));
+}
+_c = NavBar;
+exports.default = NavBar;
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$965e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-router-dom":"kjA5T","./navbar.css":"1fXfS","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"1fXfS":[function() {},{}],"4csCI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "API", ()=>API
+);
+const API = "http://localhost:9000/api";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"2cTWS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$68e5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$68e5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./core/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _config = require("./config");
+var _s = $RefreshSig$();
+function SignIn() {
+    _s();
+    const [studentId, setStudentId] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    handleSignUp = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/auth/login`, {
+                method: "POST",
+                body: JSON.stringify({
+                    studentId: studentId,
+                    password: password
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const resJson = await res.json();
+            if (resJson.msg) alert("password or email invalid");
+            else {
+                window.localStorage.setItem("studentToken", resJson.token);
+                window.localStorage.setItem("user", studentId);
+                window.location.href = "/group/registration";
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/signin.jsx",
+            lineNumber: 36
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/signin.jsx",
+                    lineNumber: 37
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("section", {
+                className: "vh-100",
+                __source: {
+                    fileName: "components/Student/signin.jsx",
+                    lineNumber: 38
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "container py-5 h-100",
+                    __source: {
+                        fileName: "components/Student/signin.jsx",
+                        lineNumber: 39
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        className: "row justify-content-center align-items-center h-100",
+                        __source: {
+                            fileName: "components/Student/signin.jsx",
+                            lineNumber: 40
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                            className: "col-12 col-lg-9 col-xl-7",
+                            __source: {
+                                fileName: "components/Student/signin.jsx",
+                                lineNumber: 41
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                className: "card shadow-2-strong card-registration",
+                                style: {
+                                    borderRadius: "15px"
+                                },
+                                __source: {
+                                    fileName: "components/Student/signin.jsx",
+                                    lineNumber: 42
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                    className: "card-body p-4 p-md-5",
+                                    __source: {
+                                        fileName: "components/Student/signin.jsx",
+                                        lineNumber: 46
+                                    },
+                                    __self: this,
+                                    children: [
+                                        /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                            className: "mb-4 pb-2 pb-md-0 mb-md-5",
+                                            style: {
+                                                textAlign: "center"
+                                            },
+                                            __source: {
+                                                fileName: "components/Student/signin.jsx",
+                                                lineNumber: 47
+                                            },
+                                            __self: this,
+                                            children: "Student Sign In"
+                                        }),
+                                        /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                                            className: "row g-3 needs-validation",
+                                            noValidate: true,
+                                            onSubmit: handleSignUp,
+                                            __source: {
+                                                fileName: "components/Student/signin.jsx",
+                                                lineNumber: 53
+                                            },
+                                            __self: this,
+                                            children: [
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-12",
+                                                    __source: {
+                                                        fileName: "components/Student/signin.jsx",
+                                                        lineNumber: 58
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "email",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signin.jsx",
+                                                                lineNumber: 59
+                                                            },
+                                                            __self: this,
+                                                            children: "Student Id"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            id: "id",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setStudentId(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signin.jsx",
+                                                                lineNumber: 62
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "col-md-6",
+                                                    __source: {
+                                                        fileName: "components/Student/signin.jsx",
+                                                        lineNumber: 72
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                            htmlFor: "password",
+                                                            className: "form-label",
+                                                            __source: {
+                                                                fileName: "components/Student/signin.jsx",
+                                                                lineNumber: 73
+                                                            },
+                                                            __self: this,
+                                                            children: "Password"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                            type: "password",
+                                                            className: "form-control",
+                                                            id: "password",
+                                                            required: true,
+                                                            onChange: (e)=>{
+                                                                setPassword(e.target.value);
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/signin.jsx",
+                                                                lineNumber: 76
+                                                            },
+                                                            __self: this
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                    className: "col-12",
+                                                    __source: {
+                                                        fileName: "components/Student/signin.jsx",
+                                                        lineNumber: 87
+                                                    },
+                                                    __self: this,
+                                                    children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                                        className: "btn btn-primary",
+                                                        type: "submit",
+                                                        __source: {
+                                                            fileName: "components/Student/signin.jsx",
+                                                            lineNumber: 88
+                                                        },
+                                                        __self: this,
+                                                        children: "Sign In"
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        ]
+    }));
+}
+exports.default = SignIn;
+_s(SignIn, "jjYccxOK/fvDQiYXziFLfv/nO3Q=");
+_c = SignIn;
+var _c;
+$RefreshReg$(_c, "SignIn");
+
+  $parcel$ReactRefreshHelpers$68e5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/navbar":"fYqCb","./config":"4csCI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"4fDOH":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9462 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9462.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _navbar = require("./header/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _s = $RefreshSig$();
+const ShortUniqueId = require("short-unique-id");
+function GroupRegistration() {
+    _s();
+    const uid = new ShortUniqueId({
+        dictionary: "number"
+    });
+    const [groupName, setGroupName] = _react.useState("");
+    const [student1, setStudent1] = _react.useState("");
+    const [student2, setStudent2] = _react.useState("");
+    const [student3, setStudent3] = _react.useState("");
+    const [student4, setStudent4] = _react.useState("");
+    id = "RG" + uid(4);
+    handleRegistration = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/student/insert/group`, {
+                method: "POST",
+                body: JSON.stringify({
+                    groupName: groupName,
+                    groupId: id,
+                    student1: student1,
+                    student2: student2,
+                    student3: student3,
+                    student4: student4
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                authorization: window.localStorage.getItem("studentToken")
+            });
+            const result = await res.json();
+            if (result.code == 11000) _sweetalert2Default.default.fire("Student ID Number Already registered in another group");
+            else {
+                console.log(result);
+                _sweetalert2Default.default.fire("Group Registration", "Group Registered Successfully!", "success");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/groupRegistration.jsx",
+            lineNumber: 54
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/groupRegistration.jsx",
+                    lineNumber: 55
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                style: {
+                    marginTop: "40px"
+                },
+                __source: {
+                    fileName: "components/Student/groupRegistration.jsx",
+                    lineNumber: 56
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Container, {
+                    __source: {
+                        fileName: "components/Student/groupRegistration.jsx",
+                        lineNumber: 57
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx("section", {
+                        __source: {
+                            fileName: "components/Student/groupRegistration.jsx",
+                            lineNumber: 58
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                            className: "container py-5 h-100",
+                            __source: {
+                                fileName: "components/Student/groupRegistration.jsx",
+                                lineNumber: 59
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                className: "row justify-content-center align-items-center h-100",
+                                __source: {
+                                    fileName: "components/Student/groupRegistration.jsx",
+                                    lineNumber: 60
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                    className: "col-12 col-lg-9 col-xl-7",
+                                    __source: {
+                                        fileName: "components/Student/groupRegistration.jsx",
+                                        lineNumber: 61
+                                    },
+                                    __self: this,
+                                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                        className: "card shadow-2-strong card-registration",
+                                        style: {
+                                            borderRadius: "15px"
+                                        },
+                                        __source: {
+                                            fileName: "components/Student/groupRegistration.jsx",
+                                            lineNumber: 62
+                                        },
+                                        __self: this,
+                                        children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                            className: "card-body p-4 p-md-5",
+                                            __source: {
+                                                fileName: "components/Student/groupRegistration.jsx",
+                                                lineNumber: 66
+                                            },
+                                            __self: this,
+                                            children: [
+                                                /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                                    className: "mb-4 pb-2 pb-md-0 mb-md-5",
+                                                    style: {
+                                                        textAlign: "center"
+                                                    },
+                                                    __source: {
+                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                        lineNumber: 67
+                                                    },
+                                                    __self: this,
+                                                    children: "Student Group Registration"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                                                    className: "row g-3 needs-validation",
+                                                    onSubmit: handleRegistration,
+                                                    __source: {
+                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                        lineNumber: 73
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 77
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    htmlFor: "email",
+                                                                    className: "form-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 78
+                                                                    },
+                                                                    __self: this,
+                                                                    children: "Group Name"
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "text",
+                                                                    className: "form-control",
+                                                                    id: "name",
+                                                                    required: true,
+                                                                    placeholder: "Name for your project group",
+                                                                    onChange: (e)=>setGroupName(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 81
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 90
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    htmlFor: "email",
+                                                                    className: "form-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 91
+                                                                    },
+                                                                    __self: this,
+                                                                    children: "Leader Id"
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "text",
+                                                                    className: "form-control",
+                                                                    id: "student1",
+                                                                    required: true,
+                                                                    placeholder: "Student ID",
+                                                                    onChange: (e)=>setStudent1(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 94
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 103
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    htmlFor: "email",
+                                                                    className: "form-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 104
+                                                                    },
+                                                                    __self: this,
+                                                                    children: "Member 2 Id"
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "text",
+                                                                    className: "form-control",
+                                                                    id: "student2",
+                                                                    required: true,
+                                                                    placeholder: "Student ID",
+                                                                    onChange: (e)=>setStudent2(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 107
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 116
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    htmlFor: "email",
+                                                                    className: "form-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 117
+                                                                    },
+                                                                    __self: this,
+                                                                    children: "Member 3 Id"
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "text",
+                                                                    className: "form-control",
+                                                                    id: "student3",
+                                                                    required: true,
+                                                                    placeholder: "Student ID",
+                                                                    onChange: (e)=>setStudent3(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 120
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 129
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                    htmlFor: "email",
+                                                                    className: "form-label",
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 130
+                                                                    },
+                                                                    __self: this,
+                                                                    children: "Member 4 Id"
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                    type: "text",
+                                                                    className: "form-control",
+                                                                    id: "student 4",
+                                                                    required: true,
+                                                                    placeholder: "Student ID",
+                                                                    onChange: (e)=>setStudent4(e.target.value)
+                                                                    ,
+                                                                    __source: {
+                                                                        fileName: "components/Student/groupRegistration.jsx",
+                                                                        lineNumber: 133
+                                                                    },
+                                                                    __self: this
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                            className: "col-12",
+                                                            __source: {
+                                                                fileName: "components/Student/groupRegistration.jsx",
+                                                                lineNumber: 143
+                                                            },
+                                                            __self: this,
+                                                            children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                                                className: "btn btn-primary",
+                                                                type: "submit",
+                                                                __source: {
+                                                                    fileName: "components/Student/groupRegistration.jsx",
+                                                                    lineNumber: 144
+                                                                },
+                                                                __self: this,
+                                                                children: "Register"
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        ]
+    }));
+}
+exports.default = GroupRegistration;
+_s(GroupRegistration, "kbLPmyFkCYKS/fKcfoyTlqdhsrA=");
+_c = GroupRegistration;
+var _c;
+$RefreshReg$(_c, "GroupRegistration");
+
+  $parcel$ReactRefreshHelpers$9462.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","short-unique-id":"4RDXN","sweetalert2":"a6ulr"}],"gOaJX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6789 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6789.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _navbarCss = require("./navbar.css");
+function NavBar() {
+    return(/*#__PURE__*/ _jsxRuntime.jsx(_jsxRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("nav", {
+                className: "navbar",
+                __source: {
+                    fileName: "components/Student/header/navbar.jsx",
+                    lineNumber: 8
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "nav-container",
+                    __source: {
+                        fileName: "components/Student/header/navbar.jsx",
+                        lineNumber: 9
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "row"
+                        },
+                        __source: {
+                            fileName: "components/Student/header/navbar.jsx",
+                            lineNumber: 10
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/header/navbar.jsx",
+                                    lineNumber: 11
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/home",
+                                    className: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/header/navbar.jsx",
+                                        lineNumber: 12
+                                    },
+                                    __self: this,
+                                    children: "Home"
+                                })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/header/navbar.jsx",
+                                    lineNumber: 20
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/group/registration",
+                                    className: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/header/navbar.jsx",
+                                        lineNumber: 21
+                                    },
+                                    __self: this,
+                                    children: "Research Group"
+                                })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/header/navbar.jsx",
+                                    lineNumber: 29
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/topic/registration",
+                                    lassName: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/header/navbar.jsx",
+                                        lineNumber: 30
+                                    },
+                                    __self: this,
+                                    children: "Topic Registration"
+                                })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/header/navbar.jsx",
+                                    lineNumber: 38
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/submission",
+                                    lassName: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/header/navbar.jsx",
+                                        lineNumber: 39
+                                    },
+                                    __self: this,
+                                    children: "Submission"
+                                })
+                            })
+                        ]
+                    })
+                })
+            })
+        ]
+    }));
+}
+_c = NavBar;
+exports.default = NavBar;
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$6789.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-router-dom":"kjA5T","./navbar.css":"8tLNm","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"8tLNm":[function() {},{}],"4RDXN":[function(require,module,exports) {
+var ShortUniqueId1 = (()=>{
+    var __defProp = Object.defineProperty;
+    var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+    var __hasOwnProp = Object.prototype.hasOwnProperty;
+    var __propIsEnum = Object.prototype.propertyIsEnumerable;
+    var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value
+        }) : obj[key] = value
+    ;
+    var __spreadValues = (a, b)=>{
+        for(var prop in b || (b = {
+        }))if (__hasOwnProp.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+        if (__getOwnPropSymbols) for (var prop of __getOwnPropSymbols(b))if (__propIsEnum.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+        return a;
+    };
+    var __markAsModule = (target)=>__defProp(target, "__esModule", {
+            value: true
+        })
+    ;
+    var __export = (target, all)=>{
+        __markAsModule(target);
+        for(var name in all)__defProp(target, name, {
+            get: all[name],
+            enumerable: true
+        });
+    };
+    // src/index.ts
+    var src_exports = {
+    };
+    __export(src_exports, {
+        DEFAULT_UUID_LENGTH: ()=>DEFAULT_UUID_LENGTH
+        ,
+        default: ()=>ShortUniqueId2
+    });
+    // package.json
+    var version = "4.4.4";
+    // src/index.ts
+    var DEFAULT_UUID_LENGTH = 6;
+    var DEFAULT_OPTIONS = {
+        dictionary: "alphanum",
+        shuffle: true,
+        debug: false,
+        length: DEFAULT_UUID_LENGTH
+    };
+    var _ShortUniqueId = class extends Function {
+        constructor(argOptions = {
+        }){
+            super();
+            this.dictIndex = 0;
+            this.dictRange = [];
+            this.lowerBound = 0;
+            this.upperBound = 0;
+            this.dictLength = 0;
+            this._digit_first_ascii = 48;
+            this._digit_last_ascii = 58;
+            this._alpha_lower_first_ascii = 97;
+            this._alpha_lower_last_ascii = 123;
+            this._hex_last_ascii = 103;
+            this._alpha_upper_first_ascii = 65;
+            this._alpha_upper_last_ascii = 91;
+            this._number_dict_ranges = {
+                digits: [
+                    this._digit_first_ascii,
+                    this._digit_last_ascii
+                ]
+            };
+            this._alpha_dict_ranges = {
+                lowerCase: [
+                    this._alpha_lower_first_ascii,
+                    this._alpha_lower_last_ascii
+                ],
+                upperCase: [
+                    this._alpha_upper_first_ascii,
+                    this._alpha_upper_last_ascii
+                ]
+            };
+            this._alpha_lower_dict_ranges = {
+                lowerCase: [
+                    this._alpha_lower_first_ascii,
+                    this._alpha_lower_last_ascii
+                ]
+            };
+            this._alpha_upper_dict_ranges = {
+                upperCase: [
+                    this._alpha_upper_first_ascii,
+                    this._alpha_upper_last_ascii
+                ]
+            };
+            this._alphanum_dict_ranges = {
+                digits: [
+                    this._digit_first_ascii,
+                    this._digit_last_ascii
+                ],
+                lowerCase: [
+                    this._alpha_lower_first_ascii,
+                    this._alpha_lower_last_ascii
+                ],
+                upperCase: [
+                    this._alpha_upper_first_ascii,
+                    this._alpha_upper_last_ascii
+                ]
+            };
+            this._alphanum_lower_dict_ranges = {
+                digits: [
+                    this._digit_first_ascii,
+                    this._digit_last_ascii
+                ],
+                lowerCase: [
+                    this._alpha_lower_first_ascii,
+                    this._alpha_lower_last_ascii
+                ]
+            };
+            this._alphanum_upper_dict_ranges = {
+                digits: [
+                    this._digit_first_ascii,
+                    this._digit_last_ascii
+                ],
+                upperCase: [
+                    this._alpha_upper_first_ascii,
+                    this._alpha_upper_last_ascii
+                ]
+            };
+            this._hex_dict_ranges = {
+                decDigits: [
+                    this._digit_first_ascii,
+                    this._digit_last_ascii
+                ],
+                alphaDigits: [
+                    this._alpha_lower_first_ascii,
+                    this._hex_last_ascii
+                ]
+            };
+            this.log = (...args)=>{
+                const finalArgs = [
+                    ...args
+                ];
+                finalArgs[0] = `[short-unique-id] ${args[0]}`;
+                if (this.debug === true) {
+                    if (typeof console !== "undefined" && console !== null) return console.log(...finalArgs);
+                }
+            };
+            this.setDictionary = (dictionary, shuffle)=>{
+                let finalDict;
+                if (dictionary && Array.isArray(dictionary) && dictionary.length > 1) finalDict = dictionary;
+                else {
+                    finalDict = [];
+                    let i;
+                    this.dictIndex = i = 0;
+                    const rangesName = `_${dictionary}_dict_ranges`;
+                    const ranges = this[rangesName];
+                    Object.keys(ranges).forEach((rangeType)=>{
+                        const rangeTypeKey = rangeType;
+                        this.dictRange = ranges[rangeTypeKey];
+                        this.lowerBound = this.dictRange[0];
+                        this.upperBound = this.dictRange[1];
+                        for(this.dictIndex = i = this.lowerBound; this.lowerBound <= this.upperBound ? i < this.upperBound : i > this.upperBound; this.dictIndex = this.lowerBound <= this.upperBound ? i += 1 : i -= 1)finalDict.push(String.fromCharCode(this.dictIndex));
+                    });
+                }
+                if (shuffle) {
+                    const PROBABILITY = 0.5;
+                    finalDict = finalDict.sort(()=>Math.random() - PROBABILITY
+                    );
+                }
+                this.dict = finalDict;
+                this.dictLength = this.dict.length;
+                this.counter = 0;
+            };
+            this.seq = ()=>{
+                return this.sequentialUUID();
+            };
+            this.sequentialUUID = ()=>{
+                let counterDiv;
+                let counterRem;
+                let id = "";
+                counterDiv = this.counter;
+                do {
+                    counterRem = counterDiv % this.dictLength;
+                    counterDiv = Math.trunc(counterDiv / this.dictLength);
+                    id += this.dict[counterRem];
+                }while (counterDiv !== 0)
+                this.counter += 1;
+                return id;
+            };
+            this.randomUUID = (uuidLength = this.uuidLength || DEFAULT_UUID_LENGTH)=>{
+                let id;
+                let randomPartIdx;
+                let j;
+                if (uuidLength === null || typeof uuidLength === "undefined" || uuidLength < 1) throw new Error("Invalid UUID Length Provided");
+                const isPositive = uuidLength >= 0;
+                id = "";
+                for(j = 0; j < uuidLength; j += 1){
+                    randomPartIdx = parseInt((Math.random() * this.dictLength).toFixed(0), 10) % this.dictLength;
+                    id += this.dict[randomPartIdx];
+                }
+                return id;
+            };
+            this.availableUUIDs = (uuidLength = this.uuidLength)=>{
+                return parseFloat(Math.pow([
+                    ...new Set(this.dict)
+                ].length, uuidLength).toFixed(0));
+            };
+            this.approxMaxBeforeCollision = (rounds = this.availableUUIDs(this.uuidLength))=>{
+                return parseFloat(Math.sqrt(Math.PI / 2 * rounds).toFixed(20));
+            };
+            this.collisionProbability = (rounds = this.availableUUIDs(this.uuidLength), uuidLength = this.uuidLength)=>{
+                return parseFloat((this.approxMaxBeforeCollision(rounds) / this.availableUUIDs(uuidLength)).toFixed(20));
+            };
+            this.uniqueness = (rounds = this.availableUUIDs(this.uuidLength))=>{
+                const score = parseFloat((1 - this.approxMaxBeforeCollision(rounds) / rounds).toFixed(20));
+                return score > 1 ? 1 : score < 0 ? 0 : score;
+            };
+            this.getVersion = ()=>{
+                return this.version;
+            };
+            this.stamp = (finalLength)=>{
+                if (typeof finalLength !== "number" || finalLength < 10) throw new Error("Param finalLength must be number greater than 10");
+                const hexStamp = Math.floor(+new Date() / 1000).toString(16);
+                const idLength = finalLength - 9;
+                const rndIdx = Math.round(Math.random() * (idLength > 15 ? 15 : idLength));
+                const id = this.randomUUID(idLength);
+                return `${id.substr(0, rndIdx)}${hexStamp}${id.substr(rndIdx)}${rndIdx.toString(16)}`;
+            };
+            this.parseStamp = (stamp)=>{
+                if (stamp.length < 10) throw new Error("Stamp length invalid");
+                const rndIdx = parseInt(stamp.substr(stamp.length - 1, 1), 16);
+                return new Date(parseInt(stamp.substr(rndIdx, 8), 16) * 1000);
+            };
+            const options = __spreadValues(__spreadValues({
+            }, DEFAULT_OPTIONS), argOptions);
+            this.counter = 0;
+            this.debug = false;
+            this.dict = [];
+            this.version = version;
+            const { dictionary , shuffle , length  } = options;
+            this.uuidLength = length;
+            this.setDictionary(dictionary, shuffle);
+            this.debug = options.debug;
+            this.log(this.dict);
+            this.log(`Generator instantiated with Dictionary Size ${this.dictLength}`);
+            return new Proxy(this, {
+                apply: (target, that, args)=>this.randomUUID(...args)
+            });
+        }
+    };
+    var ShortUniqueId2 = _ShortUniqueId;
+    ShortUniqueId2.default = _ShortUniqueId;
+    return src_exports;
+})();
+//# sourceMappingURL=short-unique-id.js.map
+'undefined' != typeof module && (module.exports = ShortUniqueId1.default), 'undefined' != typeof window && (ShortUniqueId1 = ShortUniqueId1.default);
+
+},{}],"e6iYD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9755 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9755.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _navbar = require("./header/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _s = $RefreshSig$();
+function TopicRegistration() {
+    _s();
+    const [groupId, setGroupId] = _react.useState("");
+    const [topic, setTopic] = _react.useState("");
+    const [researchField, setResearchField] = _react.useState("");
+    const [description, setDescription] = _react.useState("");
+    const [supervisor, setSupervisor] = _react.useState("");
+    const [cosupervisor, setCosupervisor] = _react.useState("");
+    const stId = window.localStorage.getItem("user");
+    const [topicSubmit, setTopicSubmit] = _react.useState([]);
+    const loadTopic = async ()=>{
+        const response = await fetch(`${_config.API}/research/get/research/${stId}`);
+        const topic1 = response.json().then((topic2)=>{
+            setTopicSubmit(topic2);
+        });
+    };
+    _react.useEffect(()=>{
+        loadTopic();
+    }, []);
+    handleRegistration = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/research/insert/research`, {
+                method: "POST",
+                body: JSON.stringify({
+                    groupId: groupId,
+                    topic: topic,
+                    field: researchField,
+                    studentId: stId,
+                    description: description,
+                    supervisor: supervisor,
+                    cosupervisor: cosupervisor
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const result = await res.json();
+            if (result) _sweetalert2Default.default.fire("Topic Registration", "Topic Registered Successfully!", "success");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/topicRegistration.jsx",
+            lineNumber: 60
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/topicRegistration.jsx",
+                    lineNumber: 61
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                style: {
+                    marginTop: "80px"
+                },
+                __source: {
+                    fileName: "components/Student/topicRegistration.jsx",
+                    lineNumber: 62
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Container, {
+                    __source: {
+                        fileName: "components/Student/topicRegistration.jsx",
+                        lineNumber: 63
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        className: "row",
+                        __source: {
+                            fileName: "components/Student/topicRegistration.jsx",
+                            lineNumber: 64
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("section", {
+                                className: "col-sm",
+                                __source: {
+                                    fileName: "components/Student/topicRegistration.jsx",
+                                    lineNumber: 65
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                    className: "container py-5 h-100",
+                                    __source: {
+                                        fileName: "components/Student/topicRegistration.jsx",
+                                        lineNumber: 66
+                                    },
+                                    __self: this,
+                                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                        className: "row align-items-center h-100",
+                                        __source: {
+                                            fileName: "components/Student/topicRegistration.jsx",
+                                            lineNumber: 67
+                                        },
+                                        __self: this,
+                                        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                            className: "",
+                                            __source: {
+                                                fileName: "components/Student/topicRegistration.jsx",
+                                                lineNumber: 68
+                                            },
+                                            __self: this,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                className: "card shadow-2-strong card-registration",
+                                                style: {
+                                                    borderRadius: "15px"
+                                                },
+                                                __source: {
+                                                    fileName: "components/Student/topicRegistration.jsx",
+                                                    lineNumber: 69
+                                                },
+                                                __self: this,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "card p-4 -bodyp-md-5",
+                                                    __source: {
+                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                        lineNumber: 73
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                                            className: "mb-4 pb-2 pb-md-0 mb-md-5",
+                                                            style: {
+                                                                textAlign: "center"
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 74
+                                                            },
+                                                            __self: this,
+                                                            children: "Research Topic Registration"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                                                            className: "row g-3 needs-validation",
+                                                            onSubmit: handleRegistration,
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 80
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 84
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 85
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Group Id"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                            type: "text",
+                                                                            className: "form-control",
+                                                                            name: "groupId",
+                                                                            required: true,
+                                                                            placeholder: "Name for your project group",
+                                                                            onChange: (e)=>setGroupId(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 88
+                                                                            },
+                                                                            __self: this
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 97
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 98
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Topic"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                            type: "text",
+                                                                            className: "form-control",
+                                                                            name: "topic",
+                                                                            required: true,
+                                                                            placeholder: "Research topic",
+                                                                            onChange: (e)=>setTopic(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 101
+                                                                            },
+                                                                            __self: this
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 110
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 111
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Description"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("textarea", {
+                                                                            type: "text",
+                                                                            className: "form-control",
+                                                                            name: "description",
+                                                                            required: true,
+                                                                            onChange: (e)=>setDescription(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 114
+                                                                            },
+                                                                            __self: this
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 122
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 123
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Research Field"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 126
+                                                                            },
+                                                                            __self: this
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsxs("select", {
+                                                                            name: "researchfield",
+                                                                            onChange: (e)=>setResearchField(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 136
+                                                                            },
+                                                                            __self: this,
+                                                                            children: [
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "IOT",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 140
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Select A Field"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "IOT",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 141
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "IOT"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Machine Learning",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 142
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Machine Learning"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Computational biology",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 145
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Computational biology"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Data Mining",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 148
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Data Mining"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "HCI",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 149
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "HCI(Human computer interaction)"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Economics",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 153
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Economics"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Commerce",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 154
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Commerce"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Materials and Structures",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 156
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Materials and Structures"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: "Aerodynamics",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 159
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Aerodynamics"
+                                                                                }),
+                                                                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                                                                    value: " Energy Systems",
+                                                                                    __source: {
+                                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                                        lineNumber: 160
+                                                                                    },
+                                                                                    __self: this,
+                                                                                    children: "Energy Systems"
+                                                                                })
+                                                                            ]
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 165
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            style: {
+                                                                                paddingRight: "10px"
+                                                                            },
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 166
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Supervisor Request"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                            type: "CheckBox",
+                                                                            name: "supervisor",
+                                                                            value: "true",
+                                                                            onChange: (e)=>setSupervisor(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 173
+                                                                            },
+                                                                            __self: this
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 180
+                                                                    },
+                                                                    __self: this,
+                                                                    children: [
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                                                            htmlFor: "email",
+                                                                            className: "form-label",
+                                                                            style: {
+                                                                                paddingRight: "10px"
+                                                                            },
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 181
+                                                                            },
+                                                                            __self: this,
+                                                                            children: "Co Supervisor Request"
+                                                                        }),
+                                                                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                                                            type: "checkbox",
+                                                                            name: "cosupervisor",
+                                                                            value: "true",
+                                                                            onChange: (e)=>setCosupervisor(e.target.value)
+                                                                            ,
+                                                                            __source: {
+                                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                                lineNumber: 188
+                                                                            },
+                                                                            __self: this
+                                                                        })
+                                                                    ]
+                                                                }),
+                                                                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                                    className: "col-12",
+                                                                    __source: {
+                                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                                        lineNumber: 196
+                                                                    },
+                                                                    __self: this,
+                                                                    children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                                                        className: "btn btn-primary",
+                                                                        type: "submit",
+                                                                        __source: {
+                                                                            fileName: "components/Student/topicRegistration.jsx",
+                                                                            lineNumber: 197
+                                                                        },
+                                                                        __self: this,
+                                                                        children: "Register"
+                                                                    })
+                                                                })
+                                                            ]
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("section", {
+                                className: "col-sm",
+                                __source: {
+                                    fileName: "components/Student/topicRegistration.jsx",
+                                    lineNumber: 208
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                    className: "container py-5 ",
+                                    __source: {
+                                        fileName: "components/Student/topicRegistration.jsx",
+                                        lineNumber: 209
+                                    },
+                                    __self: this,
+                                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                        className: "row align-items-center h-100",
+                                        __source: {
+                                            fileName: "components/Student/topicRegistration.jsx",
+                                            lineNumber: 210
+                                        },
+                                        __self: this,
+                                        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                            className: "",
+                                            __source: {
+                                                fileName: "components/Student/topicRegistration.jsx",
+                                                lineNumber: 211
+                                            },
+                                            __self: this,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                                className: "card shadow-2-strong card-registration",
+                                                style: {
+                                                    borderRadius: "15px"
+                                                },
+                                                __source: {
+                                                    fileName: "components/Student/topicRegistration.jsx",
+                                                    lineNumber: 212
+                                                },
+                                                __self: this,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                                    className: "card p-4 -bodyp-md-5",
+                                                    __source: {
+                                                        fileName: "components/Student/topicRegistration.jsx",
+                                                        lineNumber: 216
+                                                    },
+                                                    __self: this,
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                                            className: "mb-4 pb-2 pb-md-0 mb-md-5",
+                                                            style: {
+                                                                textAlign: "center"
+                                                            },
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 217
+                                                            },
+                                                            __self: this,
+                                                            children: "Registered Topic"
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 223
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                "Topic: ",
+                                                                topicSubmit.topic
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 224
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                "State: ",
+                                                                topicSubmit.state
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                                                            __source: {
+                                                                fileName: "components/Student/topicRegistration.jsx",
+                                                                lineNumber: 225
+                                                            },
+                                                            __self: this,
+                                                            children: [
+                                                                "Status: ",
+                                                                topicSubmit.evaluation
+                                                            ]
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        ]
+                    })
+                })
+            })
+        ]
+    }));
+}
+_s(TopicRegistration, "21xL+MfeW5tmlJucoJH9yjMmics=");
+_c = TopicRegistration;
+exports.default = TopicRegistration;
+var _c;
+$RefreshReg$(_c, "TopicRegistration");
+
+  $parcel$ReactRefreshHelpers$9755.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","sweetalert2":"a6ulr","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"6fUxi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$214c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$214c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./header/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _s = $RefreshSig$();
+function Submission() {
+    _s();
+    const [submission, setSubmission] = _react.useState([]);
+    const loadSubmission = async ()=>{
+        const response = await fetch(`${_config.API}/get/submission`);
+        const data = await response.json();
+        setSubmission(data);
+        console.log(submission);
+    };
+    _react.useEffect(()=>{
+        loadSubmission();
+    }, []);
+    const content = submission.map((sub)=>/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            __source: {
+                fileName: "components/Student/submission.jsx",
+                lineNumber: 22
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("h6", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 23
+                    },
+                    __self: this,
+                    children: sub.name
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("h6", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 24
+                    },
+                    __self: this,
+                    children: sub.deadline
+                })
+            ]
+        }, sub._id)
+    );
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/submission.jsx",
+            lineNumber: 29
+        },
+        __self: this,
+        children: [
+            " ",
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/submission.jsx",
+                    lineNumber: 31
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                style: {
+                    marginTop: "80px"
+                },
+                __source: {
+                    fileName: "components/Student/submission.jsx",
+                    lineNumber: 32
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Container, {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 33
+                    },
+                    __self: this,
+                    children: content
+                })
+            })
+        ]
+    }));
+}
+exports.default = Submission;
+_s(Submission, "tOsjIjGNwfvVnYMwNB91RrcZTSk=");
+_c = Submission;
+var _c;
+$RefreshReg$(_c, "Submission");
+
+  $parcel$ReactRefreshHelpers$214c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","sweetalert2":"a6ulr","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
 
 //# sourceMappingURL=index.59ca2815.js.map

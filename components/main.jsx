@@ -11,6 +11,14 @@ import DocumentManagement from "./Admin/documentManagement";
 import MarkingManagement from "./Admin/markingSchema";
 import PresentationManagement from "./Admin/presentationManagement";
 
+//student route
+
+import SignUp from "./Student/signup";
+import SignIn from "./Student/signin";
+import GroupRegistration from "./Student/groupRegistration";
+import TopicRegistration from "./Student/topicRegistration";
+import Submission from "./Student/submission";
+
 function Main() {
   return (
     <>
@@ -35,6 +43,21 @@ function Main() {
           <Route
             path="/student/submission"
             element={<SubmissionManagement />}
+          ></Route>
+
+          {/* Student Routes */}
+          <Route path="/signup" element={<SignUp />}></Route>
+
+          <Route path="/submission" element={<Submission />}></Route>
+          <Route path="/" element={<SignIn />}></Route>
+          <Route
+            path="/topic/registration"
+            element={<TopicRegistration />}
+          ></Route>
+
+          <Route
+            path="/group/registration"
+            element={<GroupRegistration />}
           ></Route>
         </Routes>
       </Router>

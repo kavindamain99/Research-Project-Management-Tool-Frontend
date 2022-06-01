@@ -25,7 +25,7 @@ export default function SubmissionManagement() {
           deadline: deadline,
           degree: degree,
         }),
-        headers: { "content-type": "application/json" },
+        headers: { "Content-type": "application/json" },
       });
 
       const resJson = await res.json();
