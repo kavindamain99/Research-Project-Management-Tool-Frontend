@@ -64,17 +64,27 @@ export default function Sidebar() {
                   </a>
                 </li>
                 <li className="">
-                  <a href="/document/insert">
+                  <a href="/manage/document">
                     <span>Document Management</span>
                   </a>
                 </li>
                 <li className="">
-                  <a href="/student/submission">
+                  <a href="/manage/submission">
                     <span>Submission Management</span>
                   </a>
                 </li>
                 <li className="header-menu">
-                  <span>Extra</span>
+                  <span>New</span>
+                </li>
+                <li>
+                  <a href="/document/insert">
+                    <span>Document</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/student/submission">
+                    <span>Submission </span>
+                  </a>
                 </li>
                 <li>
                   <a href="/marking/insert">

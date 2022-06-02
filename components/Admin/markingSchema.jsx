@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 export default function MarkingManagement() {
   const [fileDocument, setFileDocument] = useState({
     name: "",
@@ -53,6 +53,11 @@ export default function MarkingManagement() {
         style={{ marginTop: "80px", marginRight: "40px", width: "80%" }}
       >
         <h2>Marking Schema</h2>
+        <div style={{ marginLeft: "autp", marginRight: "0" }}>
+          <Link to="/manage/document">
+            <button class="btn btn-secondary">Manage Available Schema</button>
+          </Link>
+        </div>
         <hr></hr>
         <form onSubmit={handleSubmit} encType="multipart/form-data">
           <div className="form-group">

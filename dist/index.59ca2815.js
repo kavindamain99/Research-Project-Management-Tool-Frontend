@@ -25209,6 +25209,8 @@ var _panel = require("./Admin/roles/panel");
 var _panelDefault = parcelHelpers.interopDefault(_panel);
 var _manageSubmission = require("./Admin/manageSubmission");
 var _manageSubmissionDefault = parcelHelpers.interopDefault(_manageSubmission);
+var _manageDocument = require("./Admin/manageDocument");
+var _manageDocumentDefault = parcelHelpers.interopDefault(_manageDocument);
 //student route
 var _signup = require("./Student/signup");
 var _signupDefault = parcelHelpers.interopDefault(_signup);
@@ -25230,13 +25232,13 @@ function Main() {
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
                 __source: {
                     fileName: "components/main.jsx",
-                    lineNumber: 30
+                    lineNumber: 31
                 },
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Routes, {
                     __source: {
                         fileName: "components/main.jsx",
-                        lineNumber: 31
+                        lineNumber: 32
                     },
                     __self: this,
                     children: [
@@ -25246,7 +25248,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 32
+                                lineNumber: 33
                             },
                             __self: this
                         }),
@@ -25256,7 +25258,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 33
+                                lineNumber: 34
                             },
                             __self: this
                         }),
@@ -25266,7 +25268,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 34
+                                lineNumber: 35
                             },
                             __self: this
                         }),
@@ -25276,7 +25278,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 35
+                                lineNumber: 36
                             },
                             __self: this
                         }),
@@ -25286,7 +25288,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 36
+                                lineNumber: 37
                             },
                             __self: this
                         }),
@@ -25296,7 +25298,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 38
+                                lineNumber: 39
                             },
                             __self: this
                         }),
@@ -25306,7 +25308,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 39
+                                lineNumber: 40
                             },
                             __self: this
                         }),
@@ -25316,7 +25318,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 44
+                                lineNumber: 45
                             },
                             __self: this
                         }),
@@ -25326,7 +25328,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 46
+                                lineNumber: 47
                             },
                             __self: this
                         }),
@@ -25336,7 +25338,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 48
+                                lineNumber: 49
                             },
                             __self: this
                         }),
@@ -25346,7 +25348,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 49
+                                lineNumber: 50
                             },
                             __self: this
                         }),
@@ -25356,7 +25358,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 54
+                                lineNumber: 55
                             },
                             __self: this
                         }),
@@ -25366,7 +25368,17 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 58
+                                lineNumber: 59
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/manage/document",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_manageDocumentDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 63
                             },
                             __self: this
                         }),
@@ -25376,7 +25388,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 63
+                                lineNumber: 65
                             },
                             __self: this
                         }),
@@ -25386,7 +25398,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 66
+                                lineNumber: 68
                             },
                             __self: this
                         }),
@@ -25396,7 +25408,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 68
+                                lineNumber: 70
                             },
                             __self: this
                         }),
@@ -25406,7 +25418,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 69
+                                lineNumber: 71
                             },
                             __self: this
                         }),
@@ -25416,7 +25428,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 70
+                                lineNumber: 72
                             },
                             __self: this
                         }),
@@ -25426,7 +25438,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 75
+                                lineNumber: 77
                             },
                             __self: this
                         })
@@ -25446,7 +25458,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD","./Student/signup":"l6njT","./Student/signin":"2cTWS","./Student/groupRegistration":"4fDOH","./Student/topicRegistration":"e6iYD","./Student/submission":"6fUxi","./Student/researchMaterial":"7SRIX","./Student/home":"fqD8l","./Admin/groupManagement":"6dqWE","./Admin/roles/panel":"dXJBu","./Admin/manageSubmission":"inU1S"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD","./Student/signup":"l6njT","./Student/signin":"2cTWS","./Student/groupRegistration":"4fDOH","./Student/topicRegistration":"e6iYD","./Student/submission":"6fUxi","./Student/researchMaterial":"7SRIX","./Student/home":"fqD8l","./Admin/groupManagement":"6dqWE","./Admin/roles/panel":"dXJBu","./Admin/manageSubmission":"inU1S","./Admin/manageDocument":"isCtF"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -28007,7 +28019,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "/document/insert",
+                                                    href: "/manage/document",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 67
@@ -28031,7 +28043,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "/student/submission",
+                                                    href: "/manage/submission",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 72
@@ -28060,7 +28072,7 @@ function Sidebar() {
                                                         lineNumber: 77
                                                     },
                                                     __self: this,
-                                                    children: "Extra"
+                                                    children: "New"
                                                 })
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsx("li", {
@@ -28070,7 +28082,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "/marking/insert",
+                                                    href: "/document/insert",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 80
@@ -28082,7 +28094,7 @@ function Sidebar() {
                                                             lineNumber: 81
                                                         },
                                                         __self: this,
-                                                        children: "Marking Schemas"
+                                                        children: "Document"
                                                     })
                                                 })
                                             }),
@@ -28093,7 +28105,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "/presentation/insert",
+                                                    href: "/student/submission",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 85
@@ -28105,7 +28117,7 @@ function Sidebar() {
                                                             lineNumber: 86
                                                         },
                                                         __self: this,
-                                                        children: "Presentation Templates"
+                                                        children: "Submission "
                                                     })
                                                 })
                                             }),
@@ -28116,7 +28128,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "#",
+                                                    href: "/marking/insert",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 90
@@ -28126,6 +28138,52 @@ function Sidebar() {
                                                         __source: {
                                                             fileName: "components/Admin/core/sidebar.jsx",
                                                             lineNumber: 91
+                                                        },
+                                                        __self: this,
+                                                        children: "Marking Schemas"
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                                __source: {
+                                                    fileName: "components/Admin/core/sidebar.jsx",
+                                                    lineNumber: 94
+                                                },
+                                                __self: this,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                                    href: "/presentation/insert",
+                                                    __source: {
+                                                        fileName: "components/Admin/core/sidebar.jsx",
+                                                        lineNumber: 95
+                                                    },
+                                                    __self: this,
+                                                    children: /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                                        __source: {
+                                                            fileName: "components/Admin/core/sidebar.jsx",
+                                                            lineNumber: 96
+                                                        },
+                                                        __self: this,
+                                                        children: "Presentation Templates"
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                                __source: {
+                                                    fileName: "components/Admin/core/sidebar.jsx",
+                                                    lineNumber: 99
+                                                },
+                                                __self: this,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                                    href: "#",
+                                                    __source: {
+                                                        fileName: "components/Admin/core/sidebar.jsx",
+                                                        lineNumber: 100
+                                                    },
+                                                    __self: this,
+                                                    children: /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                                        __source: {
+                                                            fileName: "components/Admin/core/sidebar.jsx",
+                                                            lineNumber: 101
                                                         },
                                                         __self: this
                                                     })
@@ -28140,14 +28198,14 @@ function Sidebar() {
                             className: "sidebar-footer",
                             __source: {
                                 fileName: "components/Admin/core/sidebar.jsx",
-                                lineNumber: 97
+                                lineNumber: 107
                             },
                             __self: this,
                             children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
                                 href: "/admin",
                                 __source: {
                                     fileName: "components/Admin/core/sidebar.jsx",
-                                    lineNumber: 98
+                                    lineNumber: 108
                                 },
                                 __self: this,
                                 children: /*#__PURE__*/ _jsxRuntime.jsx("span", {
@@ -28156,7 +28214,7 @@ function Sidebar() {
                                     },
                                     __source: {
                                         fileName: "components/Admin/core/sidebar.jsx",
-                                        lineNumber: 99
+                                        lineNumber: 109
                                     },
                                     __self: this,
                                     children: "Sign Out"
@@ -47517,6 +47575,7 @@ var _sweetalert2 = require("sweetalert2");
 var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function DocumentManagement() {
     _s();
@@ -47525,7 +47584,7 @@ function DocumentManagement() {
         desc: "",
         studentAllowed: false,
         staffAllowed: false,
-        docType: "",
+        docType: "document",
         degree: "",
         document: ""
     });
@@ -47538,6 +47597,7 @@ function DocumentManagement() {
         formdata.append("staffAllowed", fileDocument.staffAllowed);
         formdata.append("degree", fileDocument.degree);
         formdata.append("document", fileDocument.document);
+        formdata.append("docType", fileDocument.docType);
         await _axiosDefault.default.post(`${_config.API}/admin/document/insert`, formdata).then((res)=>{
             _sweetalert2Default.default.fire("Document", "Document Insert Successfully!", "success");
         }).catch((error)=>{
@@ -47560,14 +47620,14 @@ function DocumentManagement() {
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Admin/documentManagement.jsx",
-            lineNumber: 50
+            lineNumber: 52
         },
         __self: this,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
                 __source: {
                     fileName: "components/Admin/documentManagement.jsx",
-                    lineNumber: 51
+                    lineNumber: 53
                 },
                 __self: this
             }),
@@ -47579,22 +47639,50 @@ function DocumentManagement() {
                 },
                 __source: {
                     fileName: "components/Admin/documentManagement.jsx",
-                    lineNumber: 52
+                    lineNumber: 54
                 },
                 __self: this,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                         __source: {
                             fileName: "components/Admin/documentManagement.jsx",
-                            lineNumber: 55
+                            lineNumber: 57
                         },
                         __self: this,
                         children: "Documents"
                     }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        style: {
+                            marginLeft: "autp",
+                            marginRight: "0"
+                        },
+                        __source: {
+                            fileName: "components/Admin/documentManagement.jsx",
+                            lineNumber: 58
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                            to: "/manage/document",
+                            __source: {
+                                fileName: "components/Admin/documentManagement.jsx",
+                                lineNumber: 59
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                class: "btn btn-secondary",
+                                __source: {
+                                    fileName: "components/Admin/documentManagement.jsx",
+                                    lineNumber: 60
+                                },
+                                __self: this,
+                                children: "Manage Available Document"
+                            })
+                        })
+                    }),
                     /*#__PURE__*/ _jsxRuntime.jsx("hr", {
                         __source: {
                             fileName: "components/Admin/documentManagement.jsx",
-                            lineNumber: 56
+                            lineNumber: 63
                         },
                         __self: this
                     }),
@@ -47603,7 +47691,7 @@ function DocumentManagement() {
                         encType: "multipart/form-data",
                         __source: {
                             fileName: "components/Admin/documentManagement.jsx",
-                            lineNumber: 57
+                            lineNumber: 64
                         },
                         __self: this,
                         children: [
@@ -47611,7 +47699,7 @@ function DocumentManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 58
+                                    lineNumber: 65
                                 },
                                 __self: this,
                                 children: [
@@ -47619,10 +47707,10 @@ function DocumentManagement() {
                                         htmlFor: "name",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 59
+                                            lineNumber: 66
                                         },
                                         __self: this,
-                                        children: "Submission Name:"
+                                        children: "Document Name:"
                                     }),
                                     /*#__PURE__*/ _jsxRuntime.jsx("input", {
                                         type: "text",
@@ -47634,7 +47722,7 @@ function DocumentManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 60
+                                            lineNumber: 67
                                         },
                                         __self: this
                                     })
@@ -47643,7 +47731,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 70
+                                    lineNumber: 77
                                 },
                                 __self: this
                             }),
@@ -47651,7 +47739,7 @@ function DocumentManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 71
+                                    lineNumber: 78
                                 },
                                 __self: this,
                                 children: [
@@ -47659,7 +47747,7 @@ function DocumentManagement() {
                                         htmlFor: "desc",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 72
+                                            lineNumber: 79
                                         },
                                         __self: this,
                                         children: "Description:"
@@ -47673,7 +47761,7 @@ function DocumentManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 73
+                                            lineNumber: 80
                                         },
                                         __self: this
                                     })
@@ -47682,7 +47770,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 82
+                                    lineNumber: 89
                                 },
                                 __self: this
                             }),
@@ -47690,7 +47778,7 @@ function DocumentManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 83
+                                    lineNumber: 90
                                 },
                                 __self: this,
                                 children: [
@@ -47703,7 +47791,7 @@ function DocumentManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 84
+                                            lineNumber: 91
                                         },
                                         __self: this
                                     }),
@@ -47712,7 +47800,7 @@ function DocumentManagement() {
                                         for: "check1",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 92
+                                            lineNumber: 99
                                         },
                                         __self: this,
                                         children: "Staff Allowed"
@@ -47723,7 +47811,7 @@ function DocumentManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 96
+                                    lineNumber: 103
                                 },
                                 __self: this,
                                 children: [
@@ -47736,7 +47824,7 @@ function DocumentManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 97
+                                            lineNumber: 104
                                         },
                                         __self: this
                                     }),
@@ -47745,7 +47833,7 @@ function DocumentManagement() {
                                         for: "check2",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 105
+                                            lineNumber: 112
                                         },
                                         __self: this,
                                         children: "Student Allowed"
@@ -47755,7 +47843,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 109
+                                    lineNumber: 116
                                 },
                                 __self: this
                             }),
@@ -47764,7 +47852,7 @@ function DocumentManagement() {
                                 htmlFor: "degree",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 110
+                                    lineNumber: 117
                                 },
                                 __self: this,
                                 children: "Degree"
@@ -47773,7 +47861,7 @@ function DocumentManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 113
+                                    lineNumber: 120
                                 },
                                 __self: this,
                                 children: [
@@ -47786,7 +47874,7 @@ function DocumentManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 114
+                                            lineNumber: 121
                                         },
                                         __self: this
                                     }),
@@ -47795,7 +47883,7 @@ function DocumentManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 122
+                                            lineNumber: 129
                                         },
                                         __self: this
                                     })
@@ -47805,7 +47893,7 @@ function DocumentManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 124
+                                    lineNumber: 131
                                 },
                                 __self: this,
                                 children: [
@@ -47818,7 +47906,7 @@ function DocumentManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 125
+                                            lineNumber: 132
                                         },
                                         __self: this
                                     }),
@@ -47827,7 +47915,7 @@ function DocumentManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 133
+                                            lineNumber: 140
                                         },
                                         __self: this
                                     })
@@ -47837,7 +47925,7 @@ function DocumentManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 135
+                                    lineNumber: 142
                                 },
                                 __self: this,
                                 children: [
@@ -47850,7 +47938,7 @@ function DocumentManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 136
+                                            lineNumber: 143
                                         },
                                         __self: this
                                     }),
@@ -47859,7 +47947,7 @@ function DocumentManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/documentManagement.jsx",
-                                            lineNumber: 144
+                                            lineNumber: 151
                                         },
                                         __self: this
                                     })
@@ -47869,7 +47957,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 146
+                                    lineNumber: 153
                                 },
                                 __self: this
                             }),
@@ -47878,7 +47966,7 @@ function DocumentManagement() {
                                 htmlFor: "file",
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 147
+                                    lineNumber: 154
                                 },
                                 __self: this,
                                 children: "Document :"
@@ -47887,7 +47975,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 150
+                                    lineNumber: 157
                                 },
                                 __self: this
                             }),
@@ -47898,7 +47986,7 @@ function DocumentManagement() {
                                 required: true,
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 151
+                                    lineNumber: 158
                                 },
                                 __self: this
                             }),
@@ -47906,7 +47994,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 164
                                 },
                                 __self: this
                             }),
@@ -47914,7 +48002,7 @@ function DocumentManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 164
                                 },
                                 __self: this
                             }),
@@ -47926,7 +48014,7 @@ function DocumentManagement() {
                                 },
                                 __source: {
                                     fileName: "components/Admin/documentManagement.jsx",
-                                    lineNumber: 158
+                                    lineNumber: 165
                                 },
                                 __self: this,
                                 children: "Submit"
@@ -47939,7 +48027,7 @@ function DocumentManagement() {
             /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
                 __source: {
                     fileName: "components/Admin/documentManagement.jsx",
-                    lineNumber: 167
+                    lineNumber: 174
                 },
                 __self: this
             })
@@ -47947,7 +48035,7 @@ function DocumentManagement() {
     }));
 }
 exports.default = DocumentManagement;
-_s(DocumentManagement, "+ZL2wt8PTO9aCaSJLJC1qu3dRgk=");
+_s(DocumentManagement, "L3g5La8SiAE8zEPgu7dwdpT05GQ=");
 _c = DocumentManagement;
 var _c;
 $RefreshReg$(_c, "DocumentManagement");
@@ -47957,7 +48045,7 @@ $RefreshReg$(_c, "DocumentManagement");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","axios":"iYoWk"}],"iYoWk":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","axios":"iYoWk","react-router-dom":"kjA5T"}],"iYoWk":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"3QmO2"}],"3QmO2":[function(require,module,exports) {
@@ -51165,6 +51253,7 @@ var _sweetalert2 = require("sweetalert2");
 var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function MarkingManagement() {
     _s();
@@ -51239,10 +51328,38 @@ function MarkingManagement() {
                         __self: this,
                         children: "Marking Schema"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("hr", {
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        style: {
+                            marginLeft: "autp",
+                            marginRight: "0"
+                        },
                         __source: {
                             fileName: "components/Admin/markingSchema.jsx",
                             lineNumber: 56
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                            to: "/manage/document",
+                            __source: {
+                                fileName: "components/Admin/markingSchema.jsx",
+                                lineNumber: 57
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                class: "btn btn-secondary",
+                                __source: {
+                                    fileName: "components/Admin/markingSchema.jsx",
+                                    lineNumber: 58
+                                },
+                                __self: this,
+                                children: "Manage Available Schema"
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("hr", {
+                        __source: {
+                            fileName: "components/Admin/markingSchema.jsx",
+                            lineNumber: 61
                         },
                         __self: this
                     }),
@@ -51251,7 +51368,7 @@ function MarkingManagement() {
                         encType: "multipart/form-data",
                         __source: {
                             fileName: "components/Admin/markingSchema.jsx",
-                            lineNumber: 57
+                            lineNumber: 62
                         },
                         __self: this,
                         children: [
@@ -51259,7 +51376,7 @@ function MarkingManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 58
+                                    lineNumber: 63
                                 },
                                 __self: this,
                                 children: [
@@ -51267,7 +51384,7 @@ function MarkingManagement() {
                                         htmlFor: "name",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 59
+                                            lineNumber: 64
                                         },
                                         __self: this,
                                         children: "Submission Name:"
@@ -51282,7 +51399,7 @@ function MarkingManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 60
+                                            lineNumber: 65
                                         },
                                         __self: this
                                     })
@@ -51291,7 +51408,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 70
+                                    lineNumber: 75
                                 },
                                 __self: this
                             }),
@@ -51299,7 +51416,7 @@ function MarkingManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 71
+                                    lineNumber: 76
                                 },
                                 __self: this,
                                 children: [
@@ -51307,7 +51424,7 @@ function MarkingManagement() {
                                         htmlFor: "desc",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 72
+                                            lineNumber: 77
                                         },
                                         __self: this,
                                         children: "Description:"
@@ -51321,7 +51438,7 @@ function MarkingManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 73
+                                            lineNumber: 78
                                         },
                                         __self: this
                                     })
@@ -51330,7 +51447,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 82
+                                    lineNumber: 87
                                 },
                                 __self: this
                             }),
@@ -51338,7 +51455,7 @@ function MarkingManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 83
+                                    lineNumber: 88
                                 },
                                 __self: this,
                                 children: [
@@ -51351,7 +51468,7 @@ function MarkingManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 84
+                                            lineNumber: 89
                                         },
                                         __self: this
                                     }),
@@ -51360,7 +51477,7 @@ function MarkingManagement() {
                                         for: "check1",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 92
+                                            lineNumber: 97
                                         },
                                         __self: this,
                                         children: "Staff Allowed"
@@ -51371,7 +51488,7 @@ function MarkingManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 96
+                                    lineNumber: 101
                                 },
                                 __self: this,
                                 children: [
@@ -51384,7 +51501,7 @@ function MarkingManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 97
+                                            lineNumber: 102
                                         },
                                         __self: this
                                     }),
@@ -51393,7 +51510,7 @@ function MarkingManagement() {
                                         for: "check2",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 105
+                                            lineNumber: 110
                                         },
                                         __self: this,
                                         children: "Student Allowed"
@@ -51403,7 +51520,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 109
+                                    lineNumber: 114
                                 },
                                 __self: this
                             }),
@@ -51412,7 +51529,7 @@ function MarkingManagement() {
                                 htmlFor: "degree",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 110
+                                    lineNumber: 115
                                 },
                                 __self: this,
                                 children: "Degree"
@@ -51421,7 +51538,7 @@ function MarkingManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 113
+                                    lineNumber: 118
                                 },
                                 __self: this,
                                 children: [
@@ -51434,7 +51551,7 @@ function MarkingManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 114
+                                            lineNumber: 119
                                         },
                                         __self: this
                                     }),
@@ -51443,7 +51560,7 @@ function MarkingManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 122
+                                            lineNumber: 127
                                         },
                                         __self: this
                                     })
@@ -51453,7 +51570,7 @@ function MarkingManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 124
+                                    lineNumber: 129
                                 },
                                 __self: this,
                                 children: [
@@ -51466,7 +51583,7 @@ function MarkingManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 125
+                                            lineNumber: 130
                                         },
                                         __self: this
                                     }),
@@ -51475,7 +51592,7 @@ function MarkingManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 133
+                                            lineNumber: 138
                                         },
                                         __self: this
                                     })
@@ -51485,7 +51602,7 @@ function MarkingManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 135
+                                    lineNumber: 140
                                 },
                                 __self: this,
                                 children: [
@@ -51498,7 +51615,7 @@ function MarkingManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 136
+                                            lineNumber: 141
                                         },
                                         __self: this
                                     }),
@@ -51507,7 +51624,7 @@ function MarkingManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/markingSchema.jsx",
-                                            lineNumber: 144
+                                            lineNumber: 149
                                         },
                                         __self: this
                                     })
@@ -51517,7 +51634,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 146
+                                    lineNumber: 151
                                 },
                                 __self: this
                             }),
@@ -51526,7 +51643,7 @@ function MarkingManagement() {
                                 htmlFor: "file",
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 147
+                                    lineNumber: 152
                                 },
                                 __self: this,
                                 children: "Document :"
@@ -51535,7 +51652,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 150
+                                    lineNumber: 155
                                 },
                                 __self: this
                             }),
@@ -51546,7 +51663,7 @@ function MarkingManagement() {
                                 required: true,
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 151
+                                    lineNumber: 156
                                 },
                                 __self: this
                             }),
@@ -51554,7 +51671,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 162
                                 },
                                 __self: this
                             }),
@@ -51562,7 +51679,7 @@ function MarkingManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 162
                                 },
                                 __self: this
                             }),
@@ -51574,7 +51691,7 @@ function MarkingManagement() {
                                 },
                                 __source: {
                                     fileName: "components/Admin/markingSchema.jsx",
-                                    lineNumber: 158
+                                    lineNumber: 163
                                 },
                                 __self: this,
                                 children: "Submit"
@@ -51587,7 +51704,7 @@ function MarkingManagement() {
             /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
                 __source: {
                     fileName: "components/Admin/markingSchema.jsx",
-                    lineNumber: 167
+                    lineNumber: 172
                 },
                 __self: this
             })
@@ -51605,7 +51722,7 @@ $RefreshReg$(_c, "MarkingManagement");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"lhPKD":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-router-dom":"kjA5T"}],"lhPKD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$97a9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -51627,6 +51744,7 @@ var _sweetalert2 = require("sweetalert2");
 var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function PresentationManagement() {
     _s();
@@ -51670,14 +51788,14 @@ function PresentationManagement() {
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Admin/presentationManagement.jsx",
-            lineNumber: 50
+            lineNumber: 51
         },
         __self: this,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
                 __source: {
                     fileName: "components/Admin/presentationManagement.jsx",
-                    lineNumber: 51
+                    lineNumber: 52
                 },
                 __self: this
             }),
@@ -51689,22 +51807,50 @@ function PresentationManagement() {
                 },
                 __source: {
                     fileName: "components/Admin/presentationManagement.jsx",
-                    lineNumber: 52
+                    lineNumber: 53
                 },
                 __self: this,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                         __source: {
                             fileName: "components/Admin/presentationManagement.jsx",
-                            lineNumber: 55
+                            lineNumber: 56
                         },
                         __self: this,
                         children: "Presentation Templates"
                     }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        style: {
+                            marginLeft: "autp",
+                            marginRight: "0"
+                        },
+                        __source: {
+                            fileName: "components/Admin/presentationManagement.jsx",
+                            lineNumber: 57
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                            to: "/manage/document",
+                            __source: {
+                                fileName: "components/Admin/presentationManagement.jsx",
+                                lineNumber: 58
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                class: "btn btn-secondary",
+                                __source: {
+                                    fileName: "components/Admin/presentationManagement.jsx",
+                                    lineNumber: 59
+                                },
+                                __self: this,
+                                children: "Manage Available Templates"
+                            })
+                        })
+                    }),
                     /*#__PURE__*/ _jsxRuntime.jsx("hr", {
                         __source: {
                             fileName: "components/Admin/presentationManagement.jsx",
-                            lineNumber: 56
+                            lineNumber: 64
                         },
                         __self: this
                     }),
@@ -51713,7 +51859,7 @@ function PresentationManagement() {
                         encType: "multipart/form-data",
                         __source: {
                             fileName: "components/Admin/presentationManagement.jsx",
-                            lineNumber: 57
+                            lineNumber: 65
                         },
                         __self: this,
                         children: [
@@ -51721,7 +51867,7 @@ function PresentationManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 58
+                                    lineNumber: 66
                                 },
                                 __self: this,
                                 children: [
@@ -51729,7 +51875,7 @@ function PresentationManagement() {
                                         htmlFor: "name",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 59
+                                            lineNumber: 67
                                         },
                                         __self: this,
                                         children: "Submission Name:"
@@ -51744,7 +51890,7 @@ function PresentationManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 60
+                                            lineNumber: 68
                                         },
                                         __self: this
                                     })
@@ -51753,7 +51899,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 70
+                                    lineNumber: 78
                                 },
                                 __self: this
                             }),
@@ -51761,7 +51907,7 @@ function PresentationManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 71
+                                    lineNumber: 79
                                 },
                                 __self: this,
                                 children: [
@@ -51769,7 +51915,7 @@ function PresentationManagement() {
                                         htmlFor: "desc",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 72
+                                            lineNumber: 80
                                         },
                                         __self: this,
                                         children: "Description:"
@@ -51783,7 +51929,7 @@ function PresentationManagement() {
                                         required: true,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 73
+                                            lineNumber: 81
                                         },
                                         __self: this
                                     })
@@ -51792,7 +51938,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 82
+                                    lineNumber: 90
                                 },
                                 __self: this
                             }),
@@ -51800,7 +51946,7 @@ function PresentationManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 83
+                                    lineNumber: 91
                                 },
                                 __self: this,
                                 children: [
@@ -51813,7 +51959,7 @@ function PresentationManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 84
+                                            lineNumber: 92
                                         },
                                         __self: this
                                     }),
@@ -51822,7 +51968,7 @@ function PresentationManagement() {
                                         for: "check1",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 92
+                                            lineNumber: 100
                                         },
                                         __self: this,
                                         children: "Staff Allowed"
@@ -51833,7 +51979,7 @@ function PresentationManagement() {
                                 class: "form-check",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 96
+                                    lineNumber: 104
                                 },
                                 __self: this,
                                 children: [
@@ -51846,7 +51992,7 @@ function PresentationManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 97
+                                            lineNumber: 105
                                         },
                                         __self: this
                                     }),
@@ -51855,7 +52001,7 @@ function PresentationManagement() {
                                         for: "check2",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 105
+                                            lineNumber: 113
                                         },
                                         __self: this,
                                         children: "Student Allowed"
@@ -51865,7 +52011,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 109
+                                    lineNumber: 117
                                 },
                                 __self: this
                             }),
@@ -51874,7 +52020,7 @@ function PresentationManagement() {
                                 htmlFor: "degree",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 110
+                                    lineNumber: 118
                                 },
                                 __self: this,
                                 children: "Degree"
@@ -51883,7 +52029,7 @@ function PresentationManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 113
+                                    lineNumber: 121
                                 },
                                 __self: this,
                                 children: [
@@ -51896,7 +52042,7 @@ function PresentationManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 114
+                                            lineNumber: 122
                                         },
                                         __self: this
                                     }),
@@ -51905,7 +52051,7 @@ function PresentationManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 122
+                                            lineNumber: 130
                                         },
                                         __self: this
                                     })
@@ -51915,7 +52061,7 @@ function PresentationManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 124
+                                    lineNumber: 132
                                 },
                                 __self: this,
                                 children: [
@@ -51928,7 +52074,7 @@ function PresentationManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 125
+                                            lineNumber: 133
                                         },
                                         __self: this
                                     }),
@@ -51937,7 +52083,7 @@ function PresentationManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 133
+                                            lineNumber: 141
                                         },
                                         __self: this
                                     })
@@ -51947,7 +52093,7 @@ function PresentationManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 135
+                                    lineNumber: 143
                                 },
                                 __self: this,
                                 children: [
@@ -51960,7 +52106,7 @@ function PresentationManagement() {
                                         onChange: handleChange,
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 136
+                                            lineNumber: 144
                                         },
                                         __self: this
                                     }),
@@ -51969,7 +52115,7 @@ function PresentationManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/presentationManagement.jsx",
-                                            lineNumber: 144
+                                            lineNumber: 152
                                         },
                                         __self: this
                                     })
@@ -51979,7 +52125,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 146
+                                    lineNumber: 154
                                 },
                                 __self: this
                             }),
@@ -51988,7 +52134,7 @@ function PresentationManagement() {
                                 htmlFor: "file",
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 147
+                                    lineNumber: 155
                                 },
                                 __self: this,
                                 children: "Document :"
@@ -51997,7 +52143,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 150
+                                    lineNumber: 158
                                 },
                                 __self: this
                             }),
@@ -52008,7 +52154,7 @@ function PresentationManagement() {
                                 required: true,
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 151
+                                    lineNumber: 159
                                 },
                                 __self: this
                             }),
@@ -52016,7 +52162,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 165
                                 },
                                 __self: this
                             }),
@@ -52024,7 +52170,7 @@ function PresentationManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 157
+                                    lineNumber: 165
                                 },
                                 __self: this
                             }),
@@ -52036,7 +52182,7 @@ function PresentationManagement() {
                                 },
                                 __source: {
                                     fileName: "components/Admin/presentationManagement.jsx",
-                                    lineNumber: 158
+                                    lineNumber: 166
                                 },
                                 __self: this,
                                 children: "Submit"
@@ -52049,7 +52195,7 @@ function PresentationManagement() {
             /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
                 __source: {
                     fileName: "components/Admin/presentationManagement.jsx",
-                    lineNumber: 167
+                    lineNumber: 175
                 },
                 __self: this
             })
@@ -52067,7 +52213,7 @@ $RefreshReg$(_c, "PresentationManagement");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"l6njT":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-router-dom":"kjA5T"}],"l6njT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b866 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56038,6 +56184,337 @@ $RefreshReg$(_c, "ManageSubmission");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","react-router-dom":"kjA5T"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","react-router-dom":"kjA5T"}],"isCtF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$85ce = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$85ce.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sidebar = require("./core/sidebar");
+var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
+var _adminNavbar = require("./core/adminNavbar");
+var _adminNavbarDefault = parcelHelpers.interopDefault(_adminNavbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function ManageDocument() {
+    _s();
+    const [submission, setSubmission] = _react.useState([]);
+    const [searchUser, setSearchUser] = _react.useState("");
+    const [deadline, setDeadline] = _react.useState("");
+    const [subId, setSubId] = _react.useState("");
+    const [user, setUser] = _react.useState("");
+    const loadSubmission = async ()=>{
+        const response = await fetch(`${_config.API}/admin/document/get/all`);
+        const result = await response.json();
+        setSubmission(result);
+        console.log(submission);
+    };
+    _react.useEffect(()=>{
+        loadSubmission();
+    }, []);
+    const destroy = (id)=>{
+        console.log(id);
+        _sweetalert2Default.default.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result)=>{
+            if (result.isConfirmed) fetch(`${_config.API}/admin/document/delete/${id}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((response)=>{
+                //  if (window.confirm("Do u want to continue?")) {
+                //    window.location.href = "/movieslist";
+                //  }
+                _sweetalert2Default.default.fire("Deleted!", "Your file has been deleted.", "success");
+                window.location.href = "/manage/document";
+            });
+        });
+    };
+    const content = submission.filter((data)=>{
+        if (searchUser === "" || data.name.toLowerCase().includes(searchUser.toLowerCase())) return data;
+    }).map((sub)=>/*#__PURE__*/ _jsxRuntime.jsx("div", {
+            style: {
+                padding: "40px 40px 40px 40px"
+            },
+            __source: {
+                fileName: "components/Admin/manageDocument.jsx",
+                lineNumber: 64
+            },
+            __self: this
+        }, sub._id)
+    );
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Admin/manageDocument.jsx",
+            lineNumber: 73
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/manageDocument.jsx",
+                    lineNumber: 74
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+                style: {
+                    marginTop: "80px",
+                    marginRight: "40px",
+                    width: "80%"
+                },
+                __source: {
+                    fileName: "components/Admin/manageDocument.jsx",
+                    lineNumber: 75
+                },
+                __self: this,
+                children: [
+                    " ",
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        id: "input-group-prepend",
+                        className: "",
+                        style: {
+                            width: "50%"
+                        },
+                        __source: {
+                            fileName: "components/Admin/manageDocument.jsx",
+                            lineNumber: 79
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                className: "input-group-text",
+                                id: "basic-addon1",
+                                style: {
+                                },
+                                __source: {
+                                    fileName: "components/Admin/manageDocument.jsx",
+                                    lineNumber: 80
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                className: "form-control ",
+                                type: "search",
+                                placeholder: "Search Document by name",
+                                name: "searchForm",
+                                onChange: (event)=>{
+                                    setSearchUser(event.target.value);
+                                },
+                                __source: {
+                                    fileName: "components/Admin/manageDocument.jsx",
+                                    lineNumber: 85
+                                },
+                                __self: this
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        style: {
+                            marginTop: "50px"
+                        },
+                        __source: {
+                            fileName: "components/Admin/manageDocument.jsx",
+                            lineNumber: 95
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Table, {
+                                striped: true,
+                                bordered: true,
+                                hover: true,
+                                __source: {
+                                    fileName: "components/Admin/manageDocument.jsx",
+                                    lineNumber: 96
+                                },
+                                __self: this,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx("thead", {
+                                        __source: {
+                                            fileName: "components/Admin/manageDocument.jsx",
+                                            lineNumber: 97
+                                        },
+                                        __self: this,
+                                        children: /*#__PURE__*/ _jsxRuntime.jsxs("tr", {
+                                            __source: {
+                                                fileName: "components/Admin/manageDocument.jsx",
+                                                lineNumber: 98
+                                            },
+                                            __self: this,
+                                            children: [
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/manageDocument.jsx",
+                                                        lineNumber: 99
+                                                    },
+                                                    __self: this,
+                                                    children: "Document Name"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/manageDocument.jsx",
+                                                        lineNumber: 101
+                                                    },
+                                                    __self: this,
+                                                    children: "Document Type"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/manageDocument.jsx",
+                                                        lineNumber: 102
+                                                    },
+                                                    __self: this,
+                                                    children: "Degree"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/manageDocument.jsx",
+                                                        lineNumber: 104
+                                                    },
+                                                    __self: this,
+                                                    children: "Action"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/manageDocument.jsx",
+                                                        lineNumber: 105
+                                                    },
+                                                    __self: this,
+                                                    children: "Action"
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsx("tbody", {
+                                        __source: {
+                                            fileName: "components/Admin/manageDocument.jsx",
+                                            lineNumber: 108
+                                        },
+                                        __self: this,
+                                        children: submission.filter((data)=>{
+                                            if (searchUser === "" || data.name.toLowerCase().includes(searchUser.toLowerCase())) return data;
+                                        }).map((doc)=>/*#__PURE__*/ _jsxRuntime.jsxs("tr", {
+                                                __source: {
+                                                    fileName: "components/Admin/manageDocument.jsx",
+                                                    lineNumber: 119
+                                                },
+                                                __self: this,
+                                                children: [
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/manageDocument.jsx",
+                                                            lineNumber: 120
+                                                        },
+                                                        __self: this,
+                                                        children: doc.name
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/manageDocument.jsx",
+                                                            lineNumber: 122
+                                                        },
+                                                        __self: this,
+                                                        children: doc.docType
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/manageDocument.jsx",
+                                                            lineNumber: 123
+                                                        },
+                                                        __self: this,
+                                                        children: doc.degree
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/manageDocument.jsx",
+                                                            lineNumber: 124
+                                                        },
+                                                        __self: this,
+                                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                                                            to: `/student/update/${doc._id}`,
+                                                            __source: {
+                                                                fileName: "components/Admin/manageDocument.jsx",
+                                                                lineNumber: 125
+                                                            },
+                                                            __self: this,
+                                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                                                variant: "warning",
+                                                                __source: {
+                                                                    fileName: "components/Admin/manageDocument.jsx",
+                                                                    lineNumber: 126
+                                                                },
+                                                                __self: this,
+                                                                children: "Update"
+                                                            })
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/manageDocument.jsx",
+                                                            lineNumber: 129
+                                                        },
+                                                        __self: this,
+                                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                                            variant: "danger",
+                                                            onClick: ()=>destroy(doc._id)
+                                                            ,
+                                                            __source: {
+                                                                fileName: "components/Admin/manageDocument.jsx",
+                                                                lineNumber: 130
+                                                            },
+                                                            __self: this,
+                                                            children: "Delete"
+                                                        })
+                                                    })
+                                                ]
+                                            })
+                                        )
+                                    })
+                                ]
+                            }),
+                            ";"
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/manageDocument.jsx",
+                    lineNumber: 141
+                },
+                __self: this
+            })
+        ]
+    }));
+}
+_s(ManageDocument, "eF2HWNR/uWZ6/RuYXY0uz/rLOkM=");
+_c = ManageDocument;
+exports.default = ManageDocument;
+var _c;
+$RefreshReg$(_c, "ManageDocument");
+
+  $parcel$ReactRefreshHelpers$85ce.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","react-router-dom":"kjA5T","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
 
 //# sourceMappingURL=index.59ca2815.js.map

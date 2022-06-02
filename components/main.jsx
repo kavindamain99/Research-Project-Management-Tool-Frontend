@@ -13,6 +13,7 @@ import PresentationManagement from "./Admin/presentationManagement";
 import GroupManagement from "./Admin/groupManagement";
 import Panel from "./Admin/roles/panel";
 import ManageSubmission from "./Admin/manageSubmission";
+import ManageDocument from "./Admin/manageDocument";
 
 //student route
 
@@ -59,6 +60,7 @@ function Main() {
             path="/manage/submission"
             element={<ManageSubmission />}
           ></Route>
+          <Route path="/manage/document" element={<ManageDocument />}></Route>
 
           <Route path="/group/manage" element={<GroupManagement />}></Route>
 

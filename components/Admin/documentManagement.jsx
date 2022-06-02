@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function DocumentManagement() {
   const [fileDocument, setFileDocument] = useState({
@@ -12,7 +13,7 @@ export default function DocumentManagement() {
     desc: "",
     studentAllowed: false,
     staffAllowed: false,
-    docType: "",
+    docType: "document",
     degree: "",
     document: "",
   });
@@ -27,6 +28,7 @@ export default function DocumentManagement() {
     formdata.append("staffAllowed", fileDocument.staffAllowed);
     formdata.append("degree", fileDocument.degree);
     formdata.append("document", fileDocument.document);
+    formdata.append("docType", fileDocument.docType);
 
     await axios
       .post(`${API}/admin/document/insert`, formdata)
@@ -53,10 +55,15 @@ export default function DocumentManagement() {
         style={{ marginTop: "80px", marginRight: "40px", width: "80%" }}
       >
         <h2>Documents</h2>
+        <div style={{ marginLeft: "autp", marginRight: "0" }}>
+          <Link to="/manage/document">
+            <button class="btn btn-secondary">Manage Available Document</button>
+          </Link>
+        </div>
         <hr></hr>
         <form onSubmit={handleSubmit} encType="multipart/form-data">
           <div className="form-group">
-            <label htmlFor="name">Submission Name:</label>
+            <label htmlFor="name">Document Name:</label>
             <input
               type="text"
               className="form-control"
