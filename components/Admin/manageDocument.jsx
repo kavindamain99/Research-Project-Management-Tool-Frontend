@@ -122,9 +122,14 @@ function ManageDocument() {
                     <td>{doc.docType}</td>
                     <td>{doc.degree}</td>
                     <td>
-                      <Link to={`/student/update/${doc._id}`}>
-                        <Button variant="warning">Update</Button>
-                      </Link>
+                      <Button variant="warning">
+                        <a
+                          href={`${doc.document}`}
+                          style={{ color: "black", textDecoration: "none" }}
+                        >
+                          Download
+                        </a>
+                      </Button>
                     </td>
                     <td>
                       <Button variant="danger" onClick={() => destroy(doc._id)}>

@@ -14,6 +14,7 @@ import GroupManagement from "./Admin/groupManagement";
 import Panel from "./Admin/roles/panel";
 import ManageSubmission from "./Admin/manageSubmission";
 import ManageDocument from "./Admin/manageDocument";
+import DocumentUpdate from "./Admin/documentUpdate";
 
 //student route
 
@@ -37,6 +38,11 @@ function Main() {
           <Route path="/user/panel" element={<Panel />}></Route>
 
           <Route path="/student/update/:id" element={<StudentUpdate />}></Route>
+          <Route
+            path="/document/update/:id"
+            element={<DocumentUpdate />}
+          ></Route>
+
           <Route
             path="/document/insert"
             element={<DocumentManagement />}

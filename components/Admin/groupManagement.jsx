@@ -35,7 +35,7 @@ export default function GroupManagement() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${API}/student/update/group/${groupId}`, {
+      const res = await fetch(`${API}/student/update/group/${gId}`, {
         method: "PUT",
         body: JSON.stringify({
           panelMember1: member1,
@@ -53,6 +53,33 @@ export default function GroupManagement() {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const destroy = (id) => {
+    console.log(id);
+
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`${API}/student/delete/group/${id}`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+        }).then((response) => {
+          //  if (window.confirm("Do u want to continue?")) {
+          //    window.location.href = "/movieslist";
+          //  }
+          Swal.fire("Deleted!", "Group has been deleted.", "success");
+          window.location.href = "/group/manage";
+        });
+      }
+    });
   };
   const content = group
     .filter((data) => {
@@ -81,6 +108,9 @@ export default function GroupManagement() {
         <br />
         04. {group.student4}
         <br />
+        <div style={{ color: "white" }}>
+          {(gId = group._id ? group._id : group)}
+        </div>
         <br></br>
         <form onSubmit={handleSubmit}>
           <input
@@ -92,46 +122,47 @@ export default function GroupManagement() {
             style={{ width: "40%" }}
             pattern={`${group.groupId}`}
             title="Group Id Not Matched"
+            required
           ></input>
           <br></br>
           <select
             name="member1"
-            value={panel.firstName}
+            value={panel.id}
             style={{ marginRight: "10px" }}
             onChange={(e) => setMember1(e.target.value)}
           >
             <option>Please select Panel Member 1</option>
             {panel &&
               panel.map((c, i) => (
-                <option key={i} value={c.firstName}>
+                <option key={i} value={c.id}>
                   {c.firstName} {c.lastName}
                 </option>
               ))}
           </select>
           <select
             name="member2"
-            value={panel.firstName}
+            value={panel.id}
             style={{ marginRight: "10px" }}
             onChange={(e) => setMember2(e.target.value)}
           >
             <option>Please select Panel Member 2</option>
             {panel &&
               panel.map((c, i) => (
-                <option key={i} value={c.firstName}>
+                <option key={i} value={c.id}>
                   {c.firstName} {c.lastName}
                 </option>
               ))}
           </select>
           <select
             name="member3"
-            value={panel.firstName}
+            value={panel.id}
             style={{ marginRight: "10px" }}
             onChange={(e) => setMember3(e.target.value)}
           >
             <option>Please select Panel Member 3</option>
             {panel &&
               panel.map((c, i) => (
-                <option key={i} value={c.firstName}>
+                <option key={i} value={c.id}>
                   {c.firstName} {c.lastName}
                 </option>
               ))}
@@ -139,10 +170,18 @@ export default function GroupManagement() {
 
           <br></br>
           <br></br>
-          <button type="submit" class="btn btn-secondary">
+          <button type="submit" class="btn btn-warning">
             Submit
           </button>
         </form>
+        <br></br>
+        <button
+          className="btn btn-danger"
+          onClick={() => destroy(gId)}
+          style={{ width: "75px" }}
+        >
+          Delete
+        </button>
       </div>
     ));
 
