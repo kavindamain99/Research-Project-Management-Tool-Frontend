@@ -59,7 +59,7 @@ export default function Sidebar() {
                   </a>
                 </li>
                 <li className="">
-                  <a href="#">
+                  <a href="/group/manage">
                     <span>Group Management</span>
                   </a>
                 </li>

@@ -65,7 +65,9 @@ export default function UserManagement() {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="secondary">View List </Button>
+                <Link to="/user/panel">
+                  <Button variant="secondary">View List</Button>
+                </Link>{" "}
               </Card.Body>
             </Card>
           </Col>

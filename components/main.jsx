@@ -10,6 +10,9 @@ import SubmissionManagement from "./Admin/submissionManagement";
 import DocumentManagement from "./Admin/documentManagement";
 import MarkingManagement from "./Admin/markingSchema";
 import PresentationManagement from "./Admin/presentationManagement";
+import GroupManagement from "./Admin/groupManagement";
+import Panel from "./Admin/roles/panel";
+import ManageSubmission from "./Admin/manageSubmission";
 
 //student route
 
@@ -18,6 +21,8 @@ import SignIn from "./Student/signin";
 import GroupRegistration from "./Student/groupRegistration";
 import TopicRegistration from "./Student/topicRegistration";
 import Submission from "./Student/submission";
+import ResearchMaterial from "./Student/researchMaterial";
+import Home from "./Student/home";
 
 function Main() {
   return (
@@ -28,6 +33,8 @@ function Main() {
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/user/management" element={<UserManagement />}></Route>
           <Route path="/user/student" element={<Student />}></Route>
+          <Route path="/user/panel" element={<Panel />}></Route>
+
           <Route path="/student/update/:id" element={<StudentUpdate />}></Route>
           <Route
             path="/document/insert"
@@ -35,6 +42,10 @@ function Main() {
           ></Route>
 
           <Route path="/marking/insert" element={<MarkingManagement />}></Route>
+
+          <Route path="/home" element={<Home />}></Route>
+
+          <Route path="/material" element={<ResearchMaterial />}></Route>
           <Route
             path="/presentation/insert"
             element={<PresentationManagement />}
@@ -44,6 +55,12 @@ function Main() {
             path="/student/submission"
             element={<SubmissionManagement />}
           ></Route>
+          <Route
+            path="/manage/submission"
+            element={<ManageSubmission />}
+          ></Route>
+
+          <Route path="/group/manage" element={<GroupManagement />}></Route>
 
           {/* Student Routes */}
           <Route path="/signup" element={<SignUp />}></Route>

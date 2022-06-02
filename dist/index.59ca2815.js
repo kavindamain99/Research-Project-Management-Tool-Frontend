@@ -25203,6 +25203,12 @@ var _markingSchema = require("./Admin/markingSchema");
 var _markingSchemaDefault = parcelHelpers.interopDefault(_markingSchema);
 var _presentationManagement = require("./Admin/presentationManagement");
 var _presentationManagementDefault = parcelHelpers.interopDefault(_presentationManagement);
+var _groupManagement = require("./Admin/groupManagement");
+var _groupManagementDefault = parcelHelpers.interopDefault(_groupManagement);
+var _panel = require("./Admin/roles/panel");
+var _panelDefault = parcelHelpers.interopDefault(_panel);
+var _manageSubmission = require("./Admin/manageSubmission");
+var _manageSubmissionDefault = parcelHelpers.interopDefault(_manageSubmission);
 //student route
 var _signup = require("./Student/signup");
 var _signupDefault = parcelHelpers.interopDefault(_signup);
@@ -25214,19 +25220,23 @@ var _topicRegistration = require("./Student/topicRegistration");
 var _topicRegistrationDefault = parcelHelpers.interopDefault(_topicRegistration);
 var _submission = require("./Student/submission");
 var _submissionDefault = parcelHelpers.interopDefault(_submission);
+var _researchMaterial = require("./Student/researchMaterial");
+var _researchMaterialDefault = parcelHelpers.interopDefault(_researchMaterial);
+var _home = require("./Student/home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
 function Main() {
     return(/*#__PURE__*/ _jsxRuntime.jsx(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
                 __source: {
                     fileName: "components/main.jsx",
-                    lineNumber: 25
+                    lineNumber: 30
                 },
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Routes, {
                     __source: {
                         fileName: "components/main.jsx",
-                        lineNumber: 26
+                        lineNumber: 31
                     },
                     __self: this,
                     children: [
@@ -25236,7 +25246,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 27
+                                lineNumber: 32
                             },
                             __self: this
                         }),
@@ -25246,7 +25256,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 28
+                                lineNumber: 33
                             },
                             __self: this
                         }),
@@ -25256,7 +25266,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 29
+                                lineNumber: 34
                             },
                             __self: this
                         }),
@@ -25266,7 +25276,17 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 30
+                                lineNumber: 35
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/user/panel",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_panelDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 36
                             },
                             __self: this
                         }),
@@ -25276,7 +25296,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 31
+                                lineNumber: 38
                             },
                             __self: this
                         }),
@@ -25286,7 +25306,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 32
+                                lineNumber: 39
                             },
                             __self: this
                         }),
@@ -25296,7 +25316,27 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 37
+                                lineNumber: 44
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/home",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_homeDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 46
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/material",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_researchMaterialDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 48
                             },
                             __self: this
                         }),
@@ -25306,7 +25346,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 38
+                                lineNumber: 49
                             },
                             __self: this
                         }),
@@ -25316,7 +25356,27 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 43
+                                lineNumber: 54
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/manage/submission",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_manageSubmissionDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 58
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                            path: "/group/manage",
+                            element: /*#__PURE__*/ _jsxRuntime.jsx(_groupManagementDefault.default, {
+                            }),
+                            __source: {
+                                fileName: "components/main.jsx",
+                                lineNumber: 63
                             },
                             __self: this
                         }),
@@ -25326,7 +25386,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 49
+                                lineNumber: 66
                             },
                             __self: this
                         }),
@@ -25336,7 +25396,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 51
+                                lineNumber: 68
                             },
                             __self: this
                         }),
@@ -25346,7 +25406,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 52
+                                lineNumber: 69
                             },
                             __self: this
                         }),
@@ -25356,7 +25416,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 53
+                                lineNumber: 70
                             },
                             __self: this
                         }),
@@ -25366,7 +25426,7 @@ function Main() {
                             }),
                             __source: {
                                 fileName: "components/main.jsx",
-                                lineNumber: 58
+                                lineNumber: 75
                             },
                             __self: this
                         })
@@ -25386,7 +25446,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD","./Student/signup":"l6njT","./Student/signin":"2cTWS","./Student/groupRegistration":"4fDOH","./Student/topicRegistration":"e6iYD","./Student/submission":"6fUxi"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-router-dom":"kjA5T","./Admin/login":"3XehE","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./Admin/dashboard":"iuSlw","./Admin/userManagement":"2AoZw","./Admin/roles/student":"kcou0","./Admin/roles/studentUpdate":"eKxGP","./Admin/submissionManagement":"bBYiZ","./Admin/documentManagement":"awBL5","./Admin/markingSchema":"afK6n","./Admin/presentationManagement":"lhPKD","./Student/signup":"l6njT","./Student/signin":"2cTWS","./Student/groupRegistration":"4fDOH","./Student/topicRegistration":"e6iYD","./Student/submission":"6fUxi","./Student/researchMaterial":"7SRIX","./Student/home":"fqD8l","./Admin/groupManagement":"6dqWE","./Admin/roles/panel":"dXJBu","./Admin/manageSubmission":"inU1S"}],"25uA3":[function() {},{}],"kjA5T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -27923,7 +27983,7 @@ function Sidebar() {
                                                 },
                                                 __self: this,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                                    href: "#",
+                                                    href: "/group/manage",
                                                     __source: {
                                                         fileName: "components/Admin/core/sidebar.jsx",
                                                         lineNumber: 62
@@ -28470,15 +28530,24 @@ function UserManagement() {
                                                 __self: this,
                                                 children: "Some quick example text to build on the card title and make up the bulk of the card's content."
                                             }),
-                                            /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
-                                                variant: "secondary",
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                                                to: "/user/panel",
                                                 __source: {
                                                     fileName: "components/Admin/userManagement.jsx",
                                                     lineNumber: 68
                                                 },
                                                 __self: this,
-                                                children: "View List "
-                                            })
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                                    variant: "secondary",
+                                                    __source: {
+                                                        fileName: "components/Admin/userManagement.jsx",
+                                                        lineNumber: 69
+                                                    },
+                                                    __self: this,
+                                                    children: "View List"
+                                                })
+                                            }),
+                                            " "
                                         ]
                                     })
                                 ]
@@ -28490,7 +28559,7 @@ function UserManagement() {
             /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
                 __source: {
                     fileName: "components/Admin/userManagement.jsx",
-                    lineNumber: 74
+                    lineNumber: 76
                 },
                 __self: this
             })
@@ -46906,6 +46975,7 @@ var _reactBootstrap = require("react-bootstrap");
 var _config = require("./config");
 var _sweetalert2 = require("sweetalert2");
 var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function SubmissionManagement() {
     _s();
@@ -46941,14 +47011,14 @@ function SubmissionManagement() {
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Admin/submissionManagement.jsx",
-            lineNumber: 44
+            lineNumber: 45
         },
         __self: this,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
                 __source: {
                     fileName: "components/Admin/submissionManagement.jsx",
-                    lineNumber: 45
+                    lineNumber: 46
                 },
                 __self: this
             }),
@@ -46960,22 +47030,72 @@ function SubmissionManagement() {
                 },
                 __source: {
                     fileName: "components/Admin/submissionManagement.jsx",
-                    lineNumber: 46
+                    lineNumber: 47
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                    /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                         __source: {
                             fileName: "components/Admin/submissionManagement.jsx",
-                            lineNumber: 49
+                            lineNumber: 50
                         },
                         __self: this,
                         children: "Submissions"
                     }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        style: {
+                            marginLeft: "autp",
+                            marginRight: "0"
+                        },
+                        __source: {
+                            fileName: "components/Admin/submissionManagement.jsx",
+                            lineNumber: 51
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                            to: "/manage/submission",
+                            __source: {
+                                fileName: "components/Admin/submissionManagement.jsx",
+                                lineNumber: 52
+                            },
+                            __self: this,
+                            children: /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                class: "btn btn-secondary",
+                                __source: {
+                                    fileName: "components/Admin/submissionManagement.jsx",
+                                    lineNumber: 53
+                                },
+                                __self: this,
+                                children: "Manage Available Submissions"
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                        __source: {
+                            fileName: "components/Admin/submissionManagement.jsx",
+                            lineNumber: 58
+                        },
+                        __self: this
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        __source: {
+                            fileName: "components/Admin/submissionManagement.jsx",
+                            lineNumber: 59
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx("h3", {
+                            __source: {
+                                fileName: "components/Admin/submissionManagement.jsx",
+                                lineNumber: 60
+                            },
+                            __self: this,
+                            children: "Add New Submission"
+                        })
+                    }),
                     /*#__PURE__*/ _jsxRuntime.jsx("hr", {
                         __source: {
                             fileName: "components/Admin/submissionManagement.jsx",
-                            lineNumber: 50
+                            lineNumber: 62
                         },
                         __self: this
                     }),
@@ -46983,7 +47103,7 @@ function SubmissionManagement() {
                         onSubmit: handleSubmission,
                         __source: {
                             fileName: "components/Admin/submissionManagement.jsx",
-                            lineNumber: 51
+                            lineNumber: 63
                         },
                         __self: this,
                         children: [
@@ -46991,7 +47111,7 @@ function SubmissionManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 52
+                                    lineNumber: 64
                                 },
                                 __self: this,
                                 children: [
@@ -46999,7 +47119,7 @@ function SubmissionManagement() {
                                         htmlFor: "name",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 53
+                                            lineNumber: 65
                                         },
                                         __self: this,
                                         children: "Submission Name:"
@@ -47012,7 +47132,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 54
+                                            lineNumber: 66
                                         },
                                         __self: this
                                     })
@@ -47021,7 +47141,7 @@ function SubmissionManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 61
+                                    lineNumber: 73
                                 },
                                 __self: this
                             }),
@@ -47029,7 +47149,7 @@ function SubmissionManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 62
+                                    lineNumber: 74
                                 },
                                 __self: this,
                                 children: [
@@ -47037,7 +47157,7 @@ function SubmissionManagement() {
                                         htmlFor: "desc",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 63
+                                            lineNumber: 75
                                         },
                                         __self: this,
                                         children: "Description:"
@@ -47049,7 +47169,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 64
+                                            lineNumber: 76
                                         },
                                         __self: this
                                     })
@@ -47058,7 +47178,7 @@ function SubmissionManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 70
+                                    lineNumber: 82
                                 },
                                 __self: this
                             }),
@@ -47067,7 +47187,7 @@ function SubmissionManagement() {
                                 htmlFor: "radio1",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 71
+                                    lineNumber: 83
                                 },
                                 __self: this,
                                 children: "Submission Type:"
@@ -47076,7 +47196,7 @@ function SubmissionManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 74
+                                    lineNumber: 86
                                 },
                                 __self: this,
                                 children: [
@@ -47090,47 +47210,13 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 75
+                                            lineNumber: 87
                                         },
                                         __self: this
                                     }),
                                     ".Pdf",
                                     /*#__PURE__*/ _jsxRuntime.jsx("label", {
                                         class: "form-check-label",
-                                        __source: {
-                                            fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 83
-                                        },
-                                        __self: this
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                                className: "form-check",
-                                __source: {
-                                    fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 85
-                                },
-                                __self: this,
-                                children: [
-                                    /*#__PURE__*/ _jsxRuntime.jsx("input", {
-                                        type: "radio",
-                                        className: "form-check-input",
-                                        id: "radio1",
-                                        name: "type",
-                                        value: "ppt",
-                                        onChange: (e)=>setType(e.target.value)
-                                        ,
-                                        __source: {
-                                            fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 86
-                                        },
-                                        __self: this
-                                    }),
-                                    ".ppt",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("label", {
-                                        className: "form-check-label",
-                                        htmlFor: "radio1",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
                                             lineNumber: 95
@@ -47150,6 +47236,40 @@ function SubmissionManagement() {
                                     /*#__PURE__*/ _jsxRuntime.jsx("input", {
                                         type: "radio",
                                         className: "form-check-input",
+                                        id: "radio1",
+                                        name: "type",
+                                        value: "ppt",
+                                        onChange: (e)=>setType(e.target.value)
+                                        ,
+                                        __source: {
+                                            fileName: "components/Admin/submissionManagement.jsx",
+                                            lineNumber: 98
+                                        },
+                                        __self: this
+                                    }),
+                                    ".ppt",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                        className: "form-check-label",
+                                        htmlFor: "radio1",
+                                        __source: {
+                                            fileName: "components/Admin/submissionManagement.jsx",
+                                            lineNumber: 107
+                                        },
+                                        __self: this
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                className: "form-check",
+                                __source: {
+                                    fileName: "components/Admin/submissionManagement.jsx",
+                                    lineNumber: 109
+                                },
+                                __self: this,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                        type: "radio",
+                                        className: "form-check-input",
                                         id: "radio2",
                                         name: "type",
                                         value: "docx",
@@ -47157,7 +47277,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 98
+                                            lineNumber: 110
                                         },
                                         __self: this
                                     }),
@@ -47167,7 +47287,7 @@ function SubmissionManagement() {
                                         htmlFor: "radio2",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 106
+                                            lineNumber: 118
                                         },
                                         __self: this
                                     })
@@ -47176,7 +47296,7 @@ function SubmissionManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 108
+                                    lineNumber: 120
                                 },
                                 __self: this
                             }),
@@ -47184,7 +47304,7 @@ function SubmissionManagement() {
                                 className: "form-group",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 109
+                                    lineNumber: 121
                                 },
                                 __self: this,
                                 children: [
@@ -47192,7 +47312,7 @@ function SubmissionManagement() {
                                         htmlFor: "deadline",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 110
+                                            lineNumber: 122
                                         },
                                         __self: this,
                                         children: "Deadline"
@@ -47205,7 +47325,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 111
+                                            lineNumber: 123
                                         },
                                         __self: this
                                     })
@@ -47215,7 +47335,7 @@ function SubmissionManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 118
+                                    lineNumber: 130
                                 },
                                 __self: this
                             }),
@@ -47224,7 +47344,7 @@ function SubmissionManagement() {
                                 htmlFor: "degree",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 119
+                                    lineNumber: 131
                                 },
                                 __self: this,
                                 children: "Degree"
@@ -47233,7 +47353,7 @@ function SubmissionManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 122
+                                    lineNumber: 134
                                 },
                                 __self: this,
                                 children: [
@@ -47247,7 +47367,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 123
+                                            lineNumber: 135
                                         },
                                         __self: this
                                     }),
@@ -47256,7 +47376,7 @@ function SubmissionManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 131
+                                            lineNumber: 143
                                         },
                                         __self: this
                                     })
@@ -47266,7 +47386,7 @@ function SubmissionManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 133
+                                    lineNumber: 145
                                 },
                                 __self: this,
                                 children: [
@@ -47280,7 +47400,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 134
+                                            lineNumber: 146
                                         },
                                         __self: this
                                     }),
@@ -47289,7 +47409,7 @@ function SubmissionManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 142
+                                            lineNumber: 154
                                         },
                                         __self: this
                                     })
@@ -47299,7 +47419,7 @@ function SubmissionManagement() {
                                 className: "form-check",
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 144
+                                    lineNumber: 156
                                 },
                                 __self: this,
                                 children: [
@@ -47313,7 +47433,7 @@ function SubmissionManagement() {
                                         ,
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 145
+                                            lineNumber: 157
                                         },
                                         __self: this
                                     }),
@@ -47322,7 +47442,7 @@ function SubmissionManagement() {
                                         className: "form-check-label",
                                         __source: {
                                             fileName: "components/Admin/submissionManagement.jsx",
-                                            lineNumber: 153
+                                            lineNumber: 165
                                         },
                                         __self: this
                                     })
@@ -47332,7 +47452,7 @@ function SubmissionManagement() {
                             /*#__PURE__*/ _jsxRuntime.jsx("br", {
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 155
+                                    lineNumber: 167
                                 },
                                 __self: this
                             }),
@@ -47344,7 +47464,7 @@ function SubmissionManagement() {
                                 },
                                 __source: {
                                     fileName: "components/Admin/submissionManagement.jsx",
-                                    lineNumber: 156
+                                    lineNumber: 168
                                 },
                                 __self: this,
                                 children: "Submit"
@@ -47357,7 +47477,7 @@ function SubmissionManagement() {
             /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
                 __source: {
                     fileName: "components/Admin/submissionManagement.jsx",
-                    lineNumber: 165
+                    lineNumber: 177
                 },
                 __self: this
             })
@@ -47375,7 +47495,7 @@ $RefreshReg$(_c, "SubmissionManagement");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr"}],"awBL5":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","react-router-dom":"kjA5T"}],"awBL5":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4875 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -53293,6 +53413,27 @@ function NavBar() {
                                     __self: this,
                                     children: "Submission"
                                 })
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("li", {
+                                className: "nav-item",
+                                __source: {
+                                    fileName: "components/Student/header/navbar.jsx",
+                                    lineNumber: 47
+                                },
+                                __self: this,
+                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                    to: "/material",
+                                    lassName: "nav-links",
+                                    style: {
+                                        color: "white"
+                                    },
+                                    __source: {
+                                        fileName: "components/Student/header/navbar.jsx",
+                                        lineNumber: 48
+                                    },
+                                    __self: this,
+                                    children: "Material"
+                                })
                             })
                         ]
                     })
@@ -54202,10 +54343,52 @@ var _navbar = require("./header/navbar");
 var _navbarDefault = parcelHelpers.interopDefault(_navbar);
 var _reactBootstrap = require("react-bootstrap");
 var _config = require("./config");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _s = $RefreshSig$();
 function Submission() {
     _s();
     const [submission, setSubmission] = _react.useState([]);
+    const stId = window.localStorage.getItem("user");
+    const d = new Date();
+    const dateTimeLocalValue = d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+    console.log(dateTimeLocalValue);
+    const [fileSubmission, setFileSubmission] = _react.useState({
+        studentId: stId,
+        groupId: "",
+        topicId: "",
+        submitTime: d,
+        document: "",
+        type: ""
+    });
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("studentId", fileSubmission.studentId);
+        formData.append("groupId", fileSubmission.groupId);
+        formData.append("topicId", fileSubmission.topicId);
+        formData.append("submitTime", fileSubmission.submitTime);
+        formData.append("document", fileSubmission.document);
+        formData.append("type", fileSubmission.type);
+        await _axiosDefault.default.post(`${_config.API}/admin/document/student/insert/submission`, formData).then((res)=>{
+            _sweetalert2Default.default.fire("Submission", "Document Submit Successfully!", "success");
+        }).catch((error)=>{
+            console.log(error);
+        });
+    };
+    const handleChange = (e)=>{
+        setFileSubmission({
+            ...fileSubmission,
+            [e.target.name]: e.target.value
+        });
+    };
+    const handleFile = (e)=>{
+        setFileSubmission({
+            ...fileSubmission,
+            document: e.target.files[0]
+        });
+        console.log(fileDocument);
+    };
     const loadSubmission = async ()=>{
         const response = await fetch(`${_config.API}/get/submission`);
         const data = await response.json();
@@ -54218,25 +54401,280 @@ function Submission() {
     const content = submission.map((sub)=>/*#__PURE__*/ _jsxRuntime.jsxs("div", {
             __source: {
                 fileName: "components/Student/submission.jsx",
-                lineNumber: 22
+                lineNumber: 66
             },
             __self: this,
             children: [
-                /*#__PURE__*/ _jsxRuntime.jsx("h6", {
+                /*#__PURE__*/ _jsxRuntime.jsx("hr", {
                     __source: {
                         fileName: "components/Student/submission.jsx",
-                        lineNumber: 23
+                        lineNumber: 67
                     },
-                    __self: this,
-                    children: sub.name
+                    __self: this
                 }),
-                /*#__PURE__*/ _jsxRuntime.jsx("h6", {
+                /*#__PURE__*/ _jsxRuntime.jsx("center", {
+                    style: {
+                        backgroundColor: "gray",
+                        color: "white"
+                    },
                     __source: {
                         fileName: "components/Student/submission.jsx",
-                        lineNumber: 24
+                        lineNumber: 68
                     },
                     __self: this,
-                    children: sub.deadline
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                        __source: {
+                            fileName: "components/Student/submission.jsx",
+                            lineNumber: 69
+                        },
+                        __self: this,
+                        children: [
+                            "Submission : ",
+                            sub.name
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("h6", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 71
+                    },
+                    __self: this,
+                    children: [
+                        "Details : ",
+                        sub.desc
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("h6", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 72
+                    },
+                    __self: this,
+                    children: [
+                        "Upload Type : ",
+                        sub.type
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("h6", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 73
+                    },
+                    __self: this,
+                    children: [
+                        "Deadline : ",
+                        sub.deadline
+                    ]
+                }),
+                sub.deadline < dateTimeLocalValue && "Submission Overdue",
+                /*#__PURE__*/ _jsxRuntime.jsx("h5", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 75
+                    },
+                    __self: this,
+                    children: "Upload Here"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                    onSubmit: handleSubmit,
+                    encType: "multipart/form-data",
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 76
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                            type: "text",
+                            name: "groupId",
+                            class: "form-control",
+                            placeholder: "Group Id",
+                            style: {
+                                width: "30%"
+                            },
+                            value: fileSubmission.groupId,
+                            onChange: handleChange,
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 77
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 86
+                            },
+                            __self: this
+                        }),
+                        " ",
+                        /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                            className: "form-check-label",
+                            htmlFor: "degree",
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 87
+                            },
+                            __self: this,
+                            children: "Submission Type"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                            className: "form-check",
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 90
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                    type: "radio",
+                                    className: "form-check-input",
+                                    id: "radio3",
+                                    name: "type",
+                                    value: "document",
+                                    onChange: handleChange,
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 91
+                                    },
+                                    __self: this
+                                }),
+                                "Document",
+                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                    className: "form-check-label",
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 99
+                                    },
+                                    __self: this
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                            className: "form-check",
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 101
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                    type: "radio",
+                                    className: "form-check-input",
+                                    id: "radio3",
+                                    name: "type",
+                                    value: "presentation",
+                                    onChange: handleChange,
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 102
+                                    },
+                                    __self: this
+                                }),
+                                "Presentation",
+                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                    className: "form-check-label",
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 110
+                                    },
+                                    __self: this
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                            className: "form-check",
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 112
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                    type: "radio",
+                                    className: "form-check-input",
+                                    id: "radio3",
+                                    name: "type",
+                                    value: "final",
+                                    onChange: handleChange,
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 113
+                                    },
+                                    __self: this
+                                }),
+                                "Final Thesis",
+                                /*#__PURE__*/ _jsxRuntime.jsx("label", {
+                                    className: "form-check-label",
+                                    __source: {
+                                        fileName: "components/Student/submission.jsx",
+                                        lineNumber: 121
+                                    },
+                                    __self: this
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 123
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                            type: "file",
+                            name: "document",
+                            onChange: handleFile,
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 124
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 125
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 126
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                            type: "submit",
+                            class: "btn btn-secondary",
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 127
+                            },
+                            __self: this,
+                            children: "Submit"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                            style: {
+                                color: "white"
+                            },
+                            __source: {
+                                fileName: "components/Student/submission.jsx",
+                                lineNumber: 130
+                            },
+                            __self: this,
+                            children: fileSubmission.topicId = sub._id
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("hr", {
+                    __source: {
+                        fileName: "components/Student/submission.jsx",
+                        lineNumber: 134
+                    },
+                    __self: this
                 })
             ]
         }, sub._id)
@@ -54244,7 +54682,7 @@ function Submission() {
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Student/submission.jsx",
-            lineNumber: 29
+            lineNumber: 139
         },
         __self: this,
         children: [
@@ -54252,7 +54690,7 @@ function Submission() {
             /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
                 __source: {
                     fileName: "components/Student/submission.jsx",
-                    lineNumber: 31
+                    lineNumber: 141
                 },
                 __self: this
             }),
@@ -54262,13 +54700,13 @@ function Submission() {
                 },
                 __source: {
                     fileName: "components/Student/submission.jsx",
-                    lineNumber: 32
+                    lineNumber: 142
                 },
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Container, {
                     __source: {
                         fileName: "components/Student/submission.jsx",
-                        lineNumber: 33
+                        lineNumber: 143
                     },
                     __self: this,
                     children: content
@@ -54278,7 +54716,7 @@ function Submission() {
     }));
 }
 exports.default = Submission;
-_s(Submission, "tOsjIjGNwfvVnYMwNB91RrcZTSk=");
+_s(Submission, "eGewgvSeEnxmjLumOprmYsvMJIk=");
 _c = Submission;
 var _c;
 $RefreshReg$(_c, "Submission");
@@ -54288,6 +54726,1318 @@ $RefreshReg$(_c, "Submission");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","sweetalert2":"a6ulr","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","sweetalert2":"a6ulr","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","axios":"iYoWk"}],"7SRIX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bce2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bce2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./header/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function ResearchMaterial() {
+    _s();
+    const [document, setDocument] = _react.useState([]);
+    const [presentation, setPresentation] = _react.useState([]);
+    const stId = window.localStorage.getItem("user");
+    const loadDocument = async ()=>{
+        const response = await fetch(`${_config.API}/admin/document/get`);
+        const data = await response.json();
+        setDocument(data);
+        console.log(data);
+    };
+    _react.useEffect(()=>{
+        loadDocument();
+    }, []);
+    const content = document.map((sub)=>/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            __source: {
+                fileName: "components/Student/researchMaterial.jsx",
+                lineNumber: 26
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("hr", {
+                    __source: {
+                        fileName: "components/Student/researchMaterial.jsx",
+                        lineNumber: 27
+                    },
+                    __self: this
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("center", {
+                    style: {
+                        backgroundColor: "gray",
+                        color: "white"
+                    },
+                    __source: {
+                        fileName: "components/Student/researchMaterial.jsx",
+                        lineNumber: 28
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                        __source: {
+                            fileName: "components/Student/researchMaterial.jsx",
+                            lineNumber: 29
+                        },
+                        __self: this,
+                        children: [
+                            " ",
+                            sub.name
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("h6", {
+                    __source: {
+                        fileName: "components/Student/researchMaterial.jsx",
+                        lineNumber: 31
+                    },
+                    __self: this,
+                    children: [
+                        "Details : ",
+                        sub.desc
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                    href: `${sub.document}`,
+                    style: {
+                        border: "1px solid gray",
+                        backgroundColor: "grey",
+                        color: "white"
+                    },
+                    __source: {
+                        fileName: "components/Student/researchMaterial.jsx",
+                        lineNumber: 32
+                    },
+                    __self: this,
+                    children: "Download"
+                })
+            ]
+        }, sub._id)
+    );
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/researchMaterial.jsx",
+            lineNumber: 46
+        },
+        __self: this,
+        children: [
+            " ",
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/researchMaterial.jsx",
+                    lineNumber: 48
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                style: {
+                    marginTop: "80px"
+                },
+                __source: {
+                    fileName: "components/Student/researchMaterial.jsx",
+                    lineNumber: 49
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+                    __source: {
+                        fileName: "components/Student/researchMaterial.jsx",
+                        lineNumber: 50
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                            __source: {
+                                fileName: "components/Student/researchMaterial.jsx",
+                                lineNumber: 51
+                            },
+                            __self: this,
+                            children: "Document and Presentation Templates"
+                        }),
+                        content
+                    ]
+                })
+            })
+        ]
+    }));
+}
+exports.default = ResearchMaterial;
+_s(ResearchMaterial, "BFAHKSWl2UFrrIPXivrYDpx+gTk=");
+_c = ResearchMaterial;
+var _c;
+$RefreshReg$(_c, "ResearchMaterial");
+
+  $parcel$ReactRefreshHelpers$bce2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","sweetalert2":"a6ulr","react":"6TuXu","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","react-router-dom":"kjA5T"}],"fqD8l":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$05fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$05fc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./header/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+function Home() {
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Student/home.jsx",
+            lineNumber: 10
+        },
+        __self: this,
+        children: [
+            " ",
+            /*#__PURE__*/ _jsxRuntime.jsx(_navbarDefault.default, {
+                __source: {
+                    fileName: "components/Student/home.jsx",
+                    lineNumber: 12
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                style: {
+                    marginTop: "80px"
+                },
+                __source: {
+                    fileName: "components/Student/home.jsx",
+                    lineNumber: 13
+                },
+                __self: this,
+                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Container, {
+                    __source: {
+                        fileName: "components/Student/home.jsx",
+                        lineNumber: 14
+                    },
+                    __self: this,
+                    children: "Home"
+                })
+            })
+        ]
+    }));
+}
+exports.default = Home;
+_c = Home;
+var _c;
+$RefreshReg$(_c, "Home");
+
+  $parcel$ReactRefreshHelpers$05fc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","sweetalert2":"a6ulr","react":"6TuXu","./header/navbar":"gOaJX","react-bootstrap":"h2YVd","./config":"4csCI","axios":"iYoWk","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"6dqWE":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e2ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e2ee.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sidebar = require("./core/sidebar");
+var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
+var _adminNavbar = require("./core/adminNavbar");
+var _adminNavbarDefault = parcelHelpers.interopDefault(_adminNavbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _s = $RefreshSig$();
+function GroupManagement() {
+    _s();
+    const [group, setGroup] = _react.useState([]);
+    const [panel, setPanel] = _react.useState([]);
+    const [member1, setMember1] = _react.useState("");
+    const [member2, setMember2] = _react.useState("");
+    const [member3, setMember3] = _react.useState("");
+    const [groupId, setGroupId] = _react.useState("");
+    const [searchUser, setSearchUser] = _react.useState("");
+    const loadGroup = async ()=>{
+        const response = await fetch(`${_config.API}/student/get/group`);
+        const data = await response.json();
+        setGroup(data);
+    };
+    const loadPanel = async ()=>{
+        const response = await fetch(`${_config.API}/admin/get/panel`);
+        const data = await response.json();
+        setPanel(data);
+        console.log(panel);
+    };
+    _react.useEffect(()=>{
+        loadGroup();
+        loadPanel();
+    }, []);
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/student/update/group/${groupId}`, {
+                method: "PUT",
+                body: JSON.stringify({
+                    panelMember1: member1,
+                    panelMember2: member2,
+                    panelMember3: member3,
+                    groupId: groupId
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const result = await res.json();
+            if (result) _sweetalert2Default.default.fire("Group", "Panel member Inserted Successfully!", "success");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    const content = group.filter((data)=>{
+        if (searchUser === "" || data.groupId.toLowerCase().includes(searchUser.toLowerCase())) return data;
+    }).map((group1)=>/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            style: {
+                padding: "40px 40px 40px 40px"
+            },
+            __source: {
+                fileName: "components/Admin/groupManagement.jsx",
+                lineNumber: 67
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsxs("h3", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 73
+                    },
+                    __self: this,
+                    children: [
+                        "Group : ",
+                        group1.groupName
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("h4", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 74
+                    },
+                    __self: this,
+                    children: [
+                        "Group Id : ",
+                        group1.groupId
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("h5", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 75
+                    },
+                    __self: this,
+                    children: "Group Members"
+                }),
+                "01. ",
+                group1.student1,
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 77
+                    },
+                    __self: this
+                }),
+                "02. ",
+                group1.student2,
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 79
+                    },
+                    __self: this
+                }),
+                "03. ",
+                group1.student3,
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 81
+                    },
+                    __self: this
+                }),
+                "04. ",
+                group1.student4,
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 83
+                    },
+                    __self: this
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 84
+                    },
+                    __self: this
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                    onSubmit: handleSubmit,
+                    __source: {
+                        fileName: "components/Admin/groupManagement.jsx",
+                        lineNumber: 85
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                            type: "text",
+                            name: "groupId",
+                            placeholder: "Please enter Group Id for make changes",
+                            onChange: (e)=>setGroupId(e.target.value)
+                            ,
+                            class: "form-control",
+                            style: {
+                                width: "40%"
+                            },
+                            pattern: `${group1.groupId}`,
+                            title: "Group Id Not Matched",
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 86
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 96
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("select", {
+                            name: "member1",
+                            value: panel.firstName,
+                            style: {
+                                marginRight: "10px"
+                            },
+                            onChange: (e)=>setMember1(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 97
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                    __source: {
+                                        fileName: "components/Admin/groupManagement.jsx",
+                                        lineNumber: 103
+                                    },
+                                    __self: this,
+                                    children: "Please select Panel Member 1"
+                                }),
+                                panel && panel.map((c, i)=>/*#__PURE__*/ _jsxRuntime.jsxs("option", {
+                                        value: c.firstName,
+                                        __source: {
+                                            fileName: "components/Admin/groupManagement.jsx",
+                                            lineNumber: 106
+                                        },
+                                        __self: this,
+                                        children: [
+                                            c.firstName,
+                                            " ",
+                                            c.lastName
+                                        ]
+                                    }, i)
+                                )
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("select", {
+                            name: "member2",
+                            value: panel.firstName,
+                            style: {
+                                marginRight: "10px"
+                            },
+                            onChange: (e)=>setMember2(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 111
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                    __source: {
+                                        fileName: "components/Admin/groupManagement.jsx",
+                                        lineNumber: 117
+                                    },
+                                    __self: this,
+                                    children: "Please select Panel Member 2"
+                                }),
+                                panel && panel.map((c, i)=>/*#__PURE__*/ _jsxRuntime.jsxs("option", {
+                                        value: c.firstName,
+                                        __source: {
+                                            fileName: "components/Admin/groupManagement.jsx",
+                                            lineNumber: 120
+                                        },
+                                        __self: this,
+                                        children: [
+                                            c.firstName,
+                                            " ",
+                                            c.lastName
+                                        ]
+                                    }, i)
+                                )
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("select", {
+                            name: "member3",
+                            value: panel.firstName,
+                            style: {
+                                marginRight: "10px"
+                            },
+                            onChange: (e)=>setMember3(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 125
+                            },
+                            __self: this,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("option", {
+                                    __source: {
+                                        fileName: "components/Admin/groupManagement.jsx",
+                                        lineNumber: 131
+                                    },
+                                    __self: this,
+                                    children: "Please select Panel Member 3"
+                                }),
+                                panel && panel.map((c, i)=>/*#__PURE__*/ _jsxRuntime.jsxs("option", {
+                                        value: c.firstName,
+                                        __source: {
+                                            fileName: "components/Admin/groupManagement.jsx",
+                                            lineNumber: 134
+                                        },
+                                        __self: this,
+                                        children: [
+                                            c.firstName,
+                                            " ",
+                                            c.lastName
+                                        ]
+                                    }, i)
+                                )
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 140
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 141
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                            type: "submit",
+                            class: "btn btn-secondary",
+                            __source: {
+                                fileName: "components/Admin/groupManagement.jsx",
+                                lineNumber: 142
+                            },
+                            __self: this,
+                            children: "Submit"
+                        })
+                    ]
+                })
+            ]
+        }, group1._id)
+    );
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Admin/groupManagement.jsx",
+            lineNumber: 150
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/groupManagement.jsx",
+                    lineNumber: 151
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+                style: {
+                    marginTop: "80px",
+                    marginRight: "40px",
+                    width: "80%"
+                },
+                __source: {
+                    fileName: "components/Admin/groupManagement.jsx",
+                    lineNumber: 152
+                },
+                __self: this,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                        __source: {
+                            fileName: "components/Admin/groupManagement.jsx",
+                            lineNumber: 155
+                        },
+                        __self: this,
+                        children: "GROUP MANAGEMENT"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("hr", {
+                        __source: {
+                            fileName: "components/Admin/groupManagement.jsx",
+                            lineNumber: 156
+                        },
+                        __self: this
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        id: "input-group-prepend",
+                        className: "",
+                        style: {
+                            width: "50%"
+                        },
+                        __source: {
+                            fileName: "components/Admin/groupManagement.jsx",
+                            lineNumber: 157
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                className: "input-group-text",
+                                id: "basic-addon1",
+                                style: {
+                                },
+                                __source: {
+                                    fileName: "components/Admin/groupManagement.jsx",
+                                    lineNumber: 158
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                className: "form-control ",
+                                type: "search",
+                                placeholder: "Search Users By Id",
+                                name: "searchForm",
+                                onChange: (event)=>{
+                                    setSearchUser(event.target.value);
+                                },
+                                __source: {
+                                    fileName: "components/Admin/groupManagement.jsx",
+                                    lineNumber: 163
+                                },
+                                __self: this
+                            })
+                        ]
+                    }),
+                    content
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/groupManagement.jsx",
+                    lineNumber: 175
+                },
+                __self: this
+            })
+        ]
+    }));
+}
+exports.default = GroupManagement;
+_s(GroupManagement, "DsY0NcSVxKMDw9EYCQLAcp8jOmQ=");
+_c = GroupManagement;
+var _c;
+$RefreshReg$(_c, "GroupManagement");
+
+  $parcel$ReactRefreshHelpers$e2ee.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"dXJBu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0256 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0256.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sidebar = require("../core/sidebar");
+var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
+var _adminNavbar = require("../core/adminNavbar");
+var _adminNavbarDefault = parcelHelpers.interopDefault(_adminNavbar);
+var _config = require("../config");
+var _reactBootstrap = require("react-bootstrap");
+var _sweetalert2React = require("sweetalert2-react");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function Panel() {
+    _s();
+    //fetch movie theaters
+    const [user, setUsers] = _react.useState([]);
+    const loadUser = async ()=>{
+        const response = await fetch(`${_config.API}/admin/get/panel`);
+        const data = await response.json();
+        console.log(data);
+        setUsers(data);
+    };
+    _react.useEffect(()=>{
+        loadUser();
+    }, []);
+    const destroy = (id)=>{
+        console.log(id);
+        _sweetalert2Default.default.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result)=>{
+            if (result.isConfirmed) fetch(`${_config.API}/admin/delete/panel/${id}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((response)=>{
+                //  if (window.confirm("Do u want to continue?")) {
+                //    window.location.href = "/movieslist";
+                //  }
+                _sweetalert2Default.default.fire("Deleted!", "Your file has been deleted.", "success");
+                window.location.href = "/user/student";
+            });
+        });
+    };
+    const [searchUser, setSearchUser] = _react.useState("");
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Admin/roles/panel.jsx",
+            lineNumber: 55
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/roles/panel.jsx",
+                    lineNumber: 56
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+                style: {
+                    marginTop: "80px",
+                    marginRight: "40px",
+                    width: "80%"
+                },
+                __source: {
+                    fileName: "components/Admin/roles/panel.jsx",
+                    lineNumber: 58
+                },
+                __self: this,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        id: "input-group-prepend",
+                        className: "",
+                        style: {
+                            width: "50%"
+                        },
+                        __source: {
+                            fileName: "components/Admin/roles/panel.jsx",
+                            lineNumber: 61
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                className: "input-group-text",
+                                id: "basic-addon1",
+                                style: {
+                                },
+                                __source: {
+                                    fileName: "components/Admin/roles/panel.jsx",
+                                    lineNumber: 62
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                className: "form-control ",
+                                type: "search",
+                                placeholder: "Search Users By Id",
+                                name: "searchForm",
+                                onChange: (event)=>{
+                                    setSearchUser(event.target.value);
+                                },
+                                __source: {
+                                    fileName: "components/Admin/roles/panel.jsx",
+                                    lineNumber: 67
+                                },
+                                __self: this
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        style: {
+                            marginTop: "50px"
+                        },
+                        __source: {
+                            fileName: "components/Admin/roles/panel.jsx",
+                            lineNumber: 78
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Table, {
+                                striped: true,
+                                bordered: true,
+                                hover: true,
+                                __source: {
+                                    fileName: "components/Admin/roles/panel.jsx",
+                                    lineNumber: 79
+                                },
+                                __self: this,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx("thead", {
+                                        __source: {
+                                            fileName: "components/Admin/roles/panel.jsx",
+                                            lineNumber: 80
+                                        },
+                                        __self: this,
+                                        children: /*#__PURE__*/ _jsxRuntime.jsxs("tr", {
+                                            __source: {
+                                                fileName: "components/Admin/roles/panel.jsx",
+                                                lineNumber: 81
+                                            },
+                                            __self: this,
+                                            children: [
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 82
+                                                    },
+                                                    __self: this,
+                                                    children: "Member Name"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 84
+                                                    },
+                                                    __self: this,
+                                                    children: "Panel ID"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 85
+                                                    },
+                                                    __self: this,
+                                                    children: "Email"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 86
+                                                    },
+                                                    __self: this,
+                                                    children: "Contact Number"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 88
+                                                    },
+                                                    __self: this,
+                                                    children: "Action"
+                                                }),
+                                                /*#__PURE__*/ _jsxRuntime.jsx("th", {
+                                                    __source: {
+                                                        fileName: "components/Admin/roles/panel.jsx",
+                                                        lineNumber: 89
+                                                    },
+                                                    __self: this,
+                                                    children: "Action"
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsx("tbody", {
+                                        __source: {
+                                            fileName: "components/Admin/roles/panel.jsx",
+                                            lineNumber: 92
+                                        },
+                                        __self: this,
+                                        children: user.filter((data)=>{
+                                            if (searchUser === "" || data.id.toLowerCase().includes(searchUser.toLowerCase())) return data;
+                                        }).map((user1)=>/*#__PURE__*/ _jsxRuntime.jsxs("tr", {
+                                                __source: {
+                                                    fileName: "components/Admin/roles/panel.jsx",
+                                                    lineNumber: 103
+                                                },
+                                                __self: this,
+                                                children: [
+                                                    /*#__PURE__*/ _jsxRuntime.jsxs("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 104
+                                                        },
+                                                        __self: this,
+                                                        children: [
+                                                            user1.firstName,
+                                                            " ",
+                                                            user1.lastName
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 108
+                                                        },
+                                                        __self: this,
+                                                        children: user1.id
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 109
+                                                        },
+                                                        __self: this,
+                                                        children: user1.email
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 110
+                                                        },
+                                                        __self: this,
+                                                        children: user1.contactNumber
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 111
+                                                        },
+                                                        __self: this,
+                                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                                                            to: `/student/update/${user1._id}`,
+                                                            __source: {
+                                                                fileName: "components/Admin/roles/panel.jsx",
+                                                                lineNumber: 112
+                                                            },
+                                                            __self: this,
+                                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                                                variant: "warning",
+                                                                __source: {
+                                                                    fileName: "components/Admin/roles/panel.jsx",
+                                                                    lineNumber: 113
+                                                                },
+                                                                __self: this,
+                                                                children: "Update"
+                                                            })
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ _jsxRuntime.jsx("td", {
+                                                        __source: {
+                                                            fileName: "components/Admin/roles/panel.jsx",
+                                                            lineNumber: 116
+                                                        },
+                                                        __self: this,
+                                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                                            variant: "danger",
+                                                            onClick: ()=>destroy(user1._id)
+                                                            ,
+                                                            __source: {
+                                                                fileName: "components/Admin/roles/panel.jsx",
+                                                                lineNumber: 117
+                                                            },
+                                                            __self: this,
+                                                            children: "Delete"
+                                                        })
+                                                    })
+                                                ]
+                                            })
+                                        )
+                                    })
+                                ]
+                            }),
+                            ";"
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/roles/panel.jsx",
+                    lineNumber: 131
+                },
+                __self: this
+            })
+        ]
+    }));
+}
+exports.default = Panel;
+_s(Panel, "6CJhJF8OcblG4PNBAMZYFPT+NFg=");
+_c = Panel;
+var _c;
+$RefreshReg$(_c, "Panel");
+
+  $parcel$ReactRefreshHelpers$0256.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","../core/sidebar":"42tHa","../core/adminNavbar":"89Kxt","../config":"5xHNB","react-bootstrap":"h2YVd","sweetalert2-react":"eZm58","sweetalert2":"a6ulr","react-router-dom":"kjA5T","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"inU1S":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$137f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$137f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sidebar = require("./core/sidebar");
+var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
+var _adminNavbar = require("./core/adminNavbar");
+var _adminNavbarDefault = parcelHelpers.interopDefault(_adminNavbar);
+var _reactBootstrap = require("react-bootstrap");
+var _config = require("./config");
+var _sweetalert2 = require("sweetalert2");
+var _sweetalert2Default = parcelHelpers.interopDefault(_sweetalert2);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function ManageSubmission() {
+    _s();
+    const [submission, setSubmission] = _react.useState([]);
+    const [searchUser, setSearchUser] = _react.useState("");
+    const [deadline, setDeadline] = _react.useState("");
+    const [subId, setSubId] = _react.useState("");
+    const loadSubmission = async ()=>{
+        const response = await fetch(`${_config.API}/get/submission`);
+        const result = await response.json();
+        setSubmission(result);
+        console.log(submission);
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        try {
+            const res = await fetch(`${_config.API}/update/submission/${sId}`, {
+                method: "PUT",
+                body: JSON.stringify({
+                    deadline: deadline
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const result = await res.json();
+            if (result) {
+                await _sweetalert2Default.default.fire("Submission", "Deadline Updated Successfully!", "success");
+                window.location.href = "/manage/submission";
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    _react.useEffect(()=>{
+        loadSubmission();
+    }, []);
+    const destroy = (id)=>{
+        console.log(id);
+        _sweetalert2Default.default.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result)=>{
+            if (result.isConfirmed) fetch(`${_config.API}/delete/submission/${id}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((response)=>{
+                //  if (window.confirm("Do u want to continue?")) {
+                //    window.location.href = "/movieslist";
+                //  }
+                _sweetalert2Default.default.fire("Deleted!", "Your file has been deleted.", "success");
+                window.location.href = "/manage/submission";
+            });
+        });
+    };
+    const content = submission.filter((data)=>{
+        if (searchUser === "" || data.name.toLowerCase().includes(searchUser.toLowerCase())) return data;
+    }).map((sub)=>/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            style: {
+                padding: "40px 40px 40px 40px"
+            },
+            __source: {
+                fileName: "components/Admin/manageSubmission.jsx",
+                lineNumber: 88
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("center", {
+                    style: {
+                        backgroundColor: "gray",
+                        color: "white"
+                    },
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 94
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
+                        __source: {
+                            fileName: "components/Admin/manageSubmission.jsx",
+                            lineNumber: 95
+                        },
+                        __self: this,
+                        children: [
+                            "Submission : ",
+                            sub.name
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("h4", {
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 97
+                    },
+                    __self: this,
+                    children: sub.desc
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    style: {
+                        color: "white"
+                    },
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 98
+                    },
+                    __self: this,
+                    children: sId = sub._id ? sub._id : sub
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("form", {
+                    onSubmit: handleSubmit,
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 99
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("h5", {
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 100
+                            },
+                            __self: this,
+                            children: "Update Deadline"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs("h6", {
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 101
+                            },
+                            __self: this,
+                            children: [
+                                "Current Deadline : ",
+                                sub.deadline
+                            ]
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("h6", {
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 103
+                            },
+                            __self: this,
+                            children: "New Deadline"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                            type: "datetime-local",
+                            class: "form-control",
+                            onChange: (e)=>setDeadline(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 104
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 110
+                            },
+                            __self: this
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                            className: "btn btn-warning",
+                            __source: {
+                                fileName: "components/Admin/manageSubmission.jsx",
+                                lineNumber: 111
+                            },
+                            __self: this,
+                            children: "Update"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 113
+                    },
+                    __self: this
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                    className: "btn btn-danger",
+                    onClick: ()=>destroy(sId)
+                    ,
+                    style: {
+                        width: "80px"
+                    },
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 114
+                    },
+                    __self: this,
+                    children: "Delete"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("br", {
+                    __source: {
+                        fileName: "components/Admin/manageSubmission.jsx",
+                        lineNumber: 121
+                    },
+                    __self: this
+                })
+            ]
+        }, sub._id)
+    );
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        __source: {
+            fileName: "components/Admin/manageSubmission.jsx",
+            lineNumber: 126
+        },
+        __self: this,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx(_adminNavbarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/manageSubmission.jsx",
+                    lineNumber: 127
+                },
+                __self: this
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+                style: {
+                    marginTop: "80px",
+                    marginRight: "40px",
+                    width: "80%"
+                },
+                __source: {
+                    fileName: "components/Admin/manageSubmission.jsx",
+                    lineNumber: 128
+                },
+                __self: this,
+                children: [
+                    " ",
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        id: "input-group-prepend",
+                        className: "",
+                        style: {
+                            width: "50%"
+                        },
+                        __source: {
+                            fileName: "components/Admin/manageSubmission.jsx",
+                            lineNumber: 132
+                        },
+                        __self: this,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                className: "input-group-text",
+                                id: "basic-addon1",
+                                style: {
+                                },
+                                __source: {
+                                    fileName: "components/Admin/manageSubmission.jsx",
+                                    lineNumber: 133
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("input", {
+                                className: "form-control ",
+                                type: "search",
+                                placeholder: "Search Submission by name",
+                                name: "searchForm",
+                                onChange: (event)=>{
+                                    setSearchUser(event.target.value);
+                                },
+                                __source: {
+                                    fileName: "components/Admin/manageSubmission.jsx",
+                                    lineNumber: 138
+                                },
+                                __self: this
+                            })
+                        ]
+                    }),
+                    content
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx(_sidebarDefault.default, {
+                __source: {
+                    fileName: "components/Admin/manageSubmission.jsx",
+                    lineNumber: 150
+                },
+                __self: this
+            })
+        ]
+    }));
+}
+_s(ManageSubmission, "JCQWVOwZbCfNNHnxVa+9Ovt+EGk=");
+_c = ManageSubmission;
+exports.default = ManageSubmission;
+var _c;
+$RefreshReg$(_c, "ManageSubmission");
+
+  $parcel$ReactRefreshHelpers$137f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./core/sidebar":"42tHa","./core/adminNavbar":"89Kxt","react-bootstrap":"h2YVd","./config":"5xHNB","sweetalert2":"a6ulr","react-router-dom":"kjA5T"}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequiree8ef")
 
 //# sourceMappingURL=index.59ca2815.js.map

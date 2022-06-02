@@ -4,6 +4,7 @@ import Navbar from "./core/adminNavbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 export default function SubmissionManagement() {
   const [name, setName] = useState("");
@@ -46,7 +47,18 @@ export default function SubmissionManagement() {
       <Container
         style={{ marginTop: "80px", marginRight: "40px", width: "80%" }}
       >
-        <h2>Submissions</h2>
+        <h1>Submissions</h1>
+        <div style={{ marginLeft: "autp", marginRight: "0" }}>
+          <Link to="/manage/submission">
+            <button class="btn btn-secondary">
+              Manage Available Submissions
+            </button>
+          </Link>
+        </div>
+        <br></br>
+        <div>
+          <h3>Add New Submission</h3>
+        </div>
         <hr></hr>
         <form onSubmit={handleSubmission}>
           <div className="form-group">
