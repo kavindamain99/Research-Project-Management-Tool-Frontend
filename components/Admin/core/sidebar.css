@@ -483,3 +483,9 @@
 .chiller-theme .sidebar-footer > a:last-child {
   border-right: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .sidebars {
+    display: none;
+  }
+}

@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import { SpinnerCircular } from "spinners-react";
 
 export default function SubmissionManagement() {
   const [name, setName] = useState("");
@@ -34,6 +35,7 @@ export default function SubmissionManagement() {
       if (resJson.msg) {
         Swal.fire(`${resJson.msg}`);
       } else {
+        <SpinnerCircular />;
         Swal.fire("Submission", "Submission Insert Successfully!", "success");
       }
     } catch (error) {
@@ -47,7 +49,7 @@ export default function SubmissionManagement() {
       <Container
         style={{ marginTop: "80px", marginRight: "40px", width: "80%" }}
       >
-        <h1>Submissions</h1>
+        <h2>Submissions</h2>
         <div style={{ marginLeft: "autp", marginRight: "0" }}>
           <Link to="/manage/submission">
             <button class="btn btn-secondary">

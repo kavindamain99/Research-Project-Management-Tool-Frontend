@@ -6,7 +6,7 @@ import { API } from "./config";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import { SpinnerCircular } from "spinners-react";
 export default function DocumentManagement() {
   const [fileDocument, setFileDocument] = useState({
     name: "",
@@ -17,7 +17,6 @@ export default function DocumentManagement() {
     degree: "",
     document: "",
   });
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formdata = new FormData();

@@ -95,11 +95,14 @@ export default function GroupManagement() {
         key={group._id}
         style={{
           padding: "40px 40px 40px 40px",
+          border: "1px solid",
+          marginTop: "20px",
         }}
       >
         <h3>Group : {group.groupName}</h3>
+        <hr></hr>
         <h4>Group Id : {group.groupId}</h4>
-        <h5>Group Members</h5>
+        <h5>Group Members : </h5>
         01. {group.student1}
         <br />
         02. {group.student2}
@@ -125,12 +128,17 @@ export default function GroupManagement() {
             required
           ></input>
           <br></br>
+          <label className="form-label">
+            <h4>Add Panel Members</h4>
+          </label>
+          <br></br>
           <select
             name="member1"
             value={panel.id}
             style={{ marginRight: "10px" }}
             onChange={(e) => setMember1(e.target.value)}
           >
+            {" "}
             <option>Please select Panel Member 1</option>
             {panel &&
               panel.map((c, i) => (
@@ -139,6 +147,7 @@ export default function GroupManagement() {
                 </option>
               ))}
           </select>
+
           <select
             name="member2"
             value={panel.id}
@@ -193,7 +202,7 @@ export default function GroupManagement() {
       >
         <h2>GROUP MANAGEMENT</h2>
         <hr></hr>
-        <div id="input-group-prepend" className="" style={{ width: "50%" }}>
+        <div id="input-group-prepend" className="" style={{ width: "65%" }}>
           <span
             className="input-group-text"
             id="basic-addon1"

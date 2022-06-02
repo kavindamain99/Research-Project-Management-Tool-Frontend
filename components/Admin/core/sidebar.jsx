@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 require("./sidebar.css");
 
 export default function Sidebar() {
+  const [style, setStyle] = useState("sidebar");
+
+  const changeStyle = () => {
+    console.log("you just clicked");
+
+    setStyle("sidebars");
+  };
   return (
-    <div>
+    <div className="sidebars">
       <div className="page-wrapper chiller-theme toggled">
         <a id="show-sidebar" className="btn btn-sm btn-dark" href="#"></a>
         <nav id="sidebar" className="sidebar-wrapper">
           <div className="sidebar-content">
             <div className="sidebar-brand">
               <a href="#">Research </a>
-              <button className=""></button>
+              <button onClick={changeStyle}></button>
               <div id="close-sidebar"></div>
             </div>
             <div className="sidebar-header">
