@@ -86,7 +86,6 @@ export const evaluateFinalThesis = async (id, marks) => {
 };
 
 export const updateDocumentState = async(id) => {
-    console.log(id)
     try {
         const response = await fetch(`${ API }/supervisor/student/document/${ id }`, {
             method : "PUT",

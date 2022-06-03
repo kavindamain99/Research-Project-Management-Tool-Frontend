@@ -28240,9 +28240,7 @@ const SupervisorSignUp = ()=>{
         })
     ;
     (function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.querySelectorAll('.needs-validation');
-        // Loop over them and prevent submission
         Array.prototype.slice.call(forms).forEach(function(form) {
             form.addEventListener('submit', function(event) {
                 if (!form.checkValidity()) {
@@ -28264,7 +28262,7 @@ const SupervisorSignUp = ()=>{
             },
             __source: {
                 fileName: "components/Supervisor/signUp.jsx",
-                lineNumber: 178
+                lineNumber: 176
             },
             __self: undefined,
             children: error
@@ -28273,7 +28271,7 @@ const SupervisorSignUp = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Supervisor/signUp.jsx",
-            lineNumber: 184
+            lineNumber: 182
         },
         __self: undefined,
         children: [
@@ -28313,9 +28311,7 @@ const signUp = async (user)=>{
             body: user
         });
         return await response.json();
-    /* if(result.error) {
-            return result;
-        } */ } catch (error) {
+    } catch (error) {
         console.log(error);
     }
 };
@@ -37602,7 +37598,6 @@ const evaluateFinalThesis = async (id, marks)=>{
     }
 };
 const updateDocumentState = async (id)=>{
-    console.log(id);
     try {
         const response = await fetch(`${_config.API}/supervisor/student/document/${id}`, {
             method: "PUT",
@@ -37719,28 +37714,25 @@ const StudentDocument = ()=>{
                 }).catch((error1)=>{
                     console.log(error1);
                 });
-                if (studentDocument.type === "final") {
-                    console.log(3333);
-                    _evaluation.evaluateFinalThesis(groupId, marks).then((data)=>{
-                        if (data.error) {
-                            if (data.message) setError(data.message);
-                            else setError(data.error);
-                        } else _evaluation.updateDocumentState(studentDocument._id).then((data1)=>{
-                            if (data1.error) {
-                                console.log(error);
-                                if (data1.message) setError(data1.message);
-                                else setError(data1.error);
-                            } else {
-                                _sweetalert2Default.default.fire("Submission succesfull", 'success');
-                                window.location.href = '/supervisor/student/documents';
-                            }
-                        }).catch((error1)=>{
-                            console.log(error1);
-                        });
+                if (studentDocument.type === "final") _evaluation.evaluateFinalThesis(groupId, marks).then((data)=>{
+                    if (data.error) {
+                        if (data.message) setError(data.message);
+                        else setError(data.error);
+                    } else _evaluation.updateDocumentState(studentDocument._id).then((data1)=>{
+                        if (data1.error) {
+                            console.log(error);
+                            if (data1.message) setError(data1.message);
+                            else setError(data1.error);
+                        } else {
+                            _sweetalert2Default.default.fire("Submission succesfull", 'success');
+                            window.location.href = '/supervisor/student/documents';
+                        }
                     }).catch((error1)=>{
                         console.log(error1);
                     });
-                }
+                }).catch((error1)=>{
+                    console.log(error1);
+                });
             }
         }).catch((error1)=>{
             console.log(error1);
@@ -37754,7 +37746,7 @@ const StudentDocument = ()=>{
             onSubmit: evaluateStudentDocument,
             __source: {
                 fileName: "components/Supervisor/studentDocument.jsx",
-                lineNumber: 181
+                lineNumber: 180
             },
             __self: undefined,
             children: [
@@ -37762,7 +37754,7 @@ const StudentDocument = ()=>{
                     className: "col-12",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 182
+                        lineNumber: 181
                     },
                     __self: undefined,
                     children: [
@@ -37771,7 +37763,7 @@ const StudentDocument = ()=>{
                             className: "form-label",
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 183
+                                lineNumber: 182
                             },
                             __self: undefined,
                             children: [
@@ -37788,7 +37780,7 @@ const StudentDocument = ()=>{
                             required: true,
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 184
+                                lineNumber: 183
                             },
                             __self: undefined
                         })
@@ -37798,7 +37790,7 @@ const StudentDocument = ()=>{
                     className: "col-12",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 186
+                        lineNumber: 185
                     },
                     __self: undefined,
                     children: [
@@ -37807,7 +37799,7 @@ const StudentDocument = ()=>{
                             className: "form-label",
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 187
+                                lineNumber: 186
                             },
                             __self: undefined,
                             children: [
@@ -37824,7 +37816,7 @@ const StudentDocument = ()=>{
                             required: true,
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 188
+                                lineNumber: 187
                             },
                             __self: undefined
                         })
@@ -37834,7 +37826,7 @@ const StudentDocument = ()=>{
                     className: "col-12",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 190
+                        lineNumber: 189
                     },
                     __self: undefined,
                     children: [
@@ -37843,7 +37835,7 @@ const StudentDocument = ()=>{
                             className: "form-label",
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 191
+                                lineNumber: 190
                             },
                             __self: undefined,
                             children: [
@@ -37860,7 +37852,7 @@ const StudentDocument = ()=>{
                             required: true,
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 192
+                                lineNumber: 191
                             },
                             __self: undefined
                         })
@@ -37870,7 +37862,7 @@ const StudentDocument = ()=>{
                     className: "col-12",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 194
+                        lineNumber: 193
                     },
                     __self: undefined,
                     children: [
@@ -37879,7 +37871,7 @@ const StudentDocument = ()=>{
                             className: "form-label",
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 195
+                                lineNumber: 194
                             },
                             __self: undefined,
                             children: [
@@ -37896,7 +37888,7 @@ const StudentDocument = ()=>{
                             required: true,
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 196
+                                lineNumber: 195
                             },
                             __self: undefined
                         })
@@ -37905,7 +37897,7 @@ const StudentDocument = ()=>{
                 /*#__PURE__*/ _jsxRuntime.jsx("br", {
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 198
+                        lineNumber: 197
                     },
                     __self: undefined
                 }),
@@ -37914,7 +37906,7 @@ const StudentDocument = ()=>{
                     type: "submit",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 199
+                        lineNumber: 198
                     },
                     __self: undefined,
                     children: "Submit"
@@ -37926,7 +37918,7 @@ const StudentDocument = ()=>{
             className: "row",
             __source: {
                 fileName: "components/Supervisor/studentDocument.jsx",
-                lineNumber: 204
+                lineNumber: 203
             },
             __self: undefined,
             children: [
@@ -37935,28 +37927,28 @@ const StudentDocument = ()=>{
                     className: "vh-100",
                     __source: {
                         fileName: "components/Supervisor/studentDocument.jsx",
-                        lineNumber: 206
+                        lineNumber: 205
                     },
                     __self: undefined,
                     children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
                         className: "container py-5 h-100",
                         __source: {
                             fileName: "components/Supervisor/studentDocument.jsx",
-                            lineNumber: 207
+                            lineNumber: 206
                         },
                         __self: undefined,
                         children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
                             className: "row justify-content-center align-items-center h-100",
                             __source: {
                                 fileName: "components/Supervisor/studentDocument.jsx",
-                                lineNumber: 208
+                                lineNumber: 207
                             },
                             __self: undefined,
                             children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
                                 className: "col-12 col-lg-9 col-xl-7",
                                 __source: {
                                     fileName: "components/Supervisor/studentDocument.jsx",
-                                    lineNumber: 209
+                                    lineNumber: 208
                                 },
                                 __self: undefined,
                                 children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
@@ -37966,14 +37958,14 @@ const StudentDocument = ()=>{
                                     },
                                     __source: {
                                         fileName: "components/Supervisor/studentDocument.jsx",
-                                        lineNumber: 210
+                                        lineNumber: 209
                                     },
                                     __self: undefined,
                                     children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                                         className: "card-body p-4 p-md-5",
                                         __source: {
                                             fileName: "components/Supervisor/studentDocument.jsx",
-                                            lineNumber: 211
+                                            lineNumber: 210
                                         },
                                         __self: undefined,
                                         children: [
@@ -37983,7 +37975,7 @@ const StudentDocument = ()=>{
                                                 },
                                                 __source: {
                                                     fileName: "components/Supervisor/studentDocument.jsx",
-                                                    lineNumber: 212
+                                                    lineNumber: 211
                                                 },
                                                 __self: undefined,
                                                 children: type()
@@ -37991,7 +37983,7 @@ const StudentDocument = ()=>{
                                             /*#__PURE__*/ _jsxRuntime.jsxs("h5", {
                                                 __source: {
                                                     fileName: "components/Supervisor/studentDocument.jsx",
-                                                    lineNumber: 213
+                                                    lineNumber: 212
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -38003,7 +37995,7 @@ const StudentDocument = ()=>{
                                                 className: "mb-2",
                                                 __source: {
                                                     fileName: "components/Supervisor/studentDocument.jsx",
-                                                    lineNumber: 214
+                                                    lineNumber: 213
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -38017,13 +38009,13 @@ const StudentDocument = ()=>{
                                                 download: true,
                                                 __source: {
                                                     fileName: "components/Supervisor/studentDocument.jsx",
-                                                    lineNumber: 215
+                                                    lineNumber: 214
                                                 },
                                                 __self: undefined,
                                                 children: /*#__PURE__*/ _jsxRuntime.jsx("h5", {
                                                     __source: {
                                                         fileName: "components/Supervisor/studentDocument.jsx",
-                                                        lineNumber: 216
+                                                        lineNumber: 215
                                                     },
                                                     __self: undefined,
                                                     children: "View document"
@@ -38051,7 +38043,7 @@ const StudentDocument = ()=>{
             },
             __source: {
                 fileName: "components/Supervisor/studentDocument.jsx",
-                lineNumber: 230
+                lineNumber: 229
             },
             __self: undefined,
             children: error
@@ -38060,7 +38052,7 @@ const StudentDocument = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         __source: {
             fileName: "components/Supervisor/studentDocument.jsx",
-            lineNumber: 236
+            lineNumber: 235
         },
         __self: undefined,
         children: [

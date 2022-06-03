@@ -14,10 +14,6 @@ export const signUp = async (user) => {
         });
 
         return await response.json();
-
-        /* if(result.error) {
-            return result;
-        } */
     }
     catch(error) {
         console.log(error);

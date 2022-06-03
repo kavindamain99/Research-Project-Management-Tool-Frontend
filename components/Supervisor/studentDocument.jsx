@@ -126,7 +126,6 @@ export const StudentDocument = () => {
                     })
                 }
                 if(studentDocument.type === "final") {
-                    console.log(3333)
                     evaluateFinalThesis(groupId, marks).then(data => {
                         if(data.error) {
                             if(data.message) {
