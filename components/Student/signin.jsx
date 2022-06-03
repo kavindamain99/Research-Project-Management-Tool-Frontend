@@ -97,6 +97,7 @@ export default function SignIn() {
           </div>
         </div>
       </section>
+
       <Footer></Footer>
     </div>
   );
