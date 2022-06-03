@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "heroku-postbuild": "parcel build index.html"
+    "build": "parcel build "
   },
   "author": "",
   "license": "ISC",
