@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import React, { useState, useEffect } from "react";
 import Navbar from "./header/navbar";
-import { Container } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import { API } from "./config";
 import axios from "axios";
 
@@ -9,6 +9,7 @@ export default function Home() {
   const stId = window.localStorage.getItem("user");
   const [topicSubmit, setTopicSubmit] = useState([]);
   const [group, setGroup] = useState([]);
+  const [result, setResult] = useState([]);
 
   const loadTopic = async () => {
     const response = await fetch(`${API}/research/get/research/${stId}`);
@@ -35,9 +36,21 @@ export default function Home() {
     });
     console.log(group);
   };
+  const groupIdResult = group.groupId;
+  console.log(groupIdResult);
+
+  const loadResult = async () => {
+    const response = await fetch(`${API}/research/get/result/${groupIdResult}`);
+    const groupST = response.json().then((groupST) => {
+      setResult(groupST);
+    });
+    console.log(result);
+  };
 
   useEffect(() => {
     loadGroup();
+
+    loadResult();
 
     loadTopic();
   }, []);
@@ -48,6 +61,43 @@ export default function Home() {
       <Navbar />
       <div style={{ marginTop: "80px" }}>
         <Container>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("./image/computing.jpg")}
+                alt="First slide"
+                style={{ width: "100%", height: "500px" }}
+              />
+              <Carousel.Caption style={{ color: "white", background: "black" }}>
+                <h3>Computing Research</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("./image/engineering.jpg")}
+                alt="Second slide"
+                style={{ width: "100%", height: "500px" }}
+              />
+
+              <Carousel.Caption style={{ color: "white", background: "black" }}>
+                <h3>Engineering Research</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={require("./image/buisness.jpg")}
+                alt="Third slide"
+                style={{ width: "100%", height: "500px" }}
+              />
+
+              <Carousel.Caption style={{ color: "white", background: "black" }}>
+                <h3>Buisness Research</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
           <div className="row">
             <section className="col-sm">
               <div className="container py-5 h-100">
