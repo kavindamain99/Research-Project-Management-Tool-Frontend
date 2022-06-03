@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/footer";
 
 export default function ResearchMaterial() {
   const [document, setDocument] = useState([]);
@@ -52,6 +53,7 @@ export default function ResearchMaterial() {
           {content}
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

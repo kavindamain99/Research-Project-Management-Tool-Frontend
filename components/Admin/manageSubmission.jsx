@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/footer";
 
 function ManageSubmission() {
   const [submission, setSubmission] = useState([]);
@@ -148,6 +149,7 @@ function ManageSubmission() {
         {content}
       </Container>
       <Sidebar></Sidebar>
+      <Footer />
     </div>
   );
 }

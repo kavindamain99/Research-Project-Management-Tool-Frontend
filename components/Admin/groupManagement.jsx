@@ -4,6 +4,7 @@ import Navbar from "./core/adminNavbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
+import Footer from "./Footer/footer";
 
 export default function GroupManagement() {
   const [group, setGroup] = useState([]);
@@ -221,6 +222,7 @@ export default function GroupManagement() {
         {content}
       </Container>
       <Sidebar />
+      <Footer />
     </div>
   );
 }

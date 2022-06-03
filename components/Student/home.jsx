@@ -1,6 +1,7 @@
 import Swal from "sweetalert2";
 import React, { useState, useEffect } from "react";
 import Navbar from "./header/navbar";
+import Footer from "./Footer/footer";
 import { Container, Carousel } from "react-bootstrap";
 import { API } from "./config";
 import axios from "axios";
@@ -163,6 +164,7 @@ export default function Home() {
           </div>
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

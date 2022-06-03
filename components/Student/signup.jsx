@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./core/navbar";
 import { API } from "./config";
+import Footer from "./Footer/footer";
 
 export default function SignUp() {
   const [firstName, setFirstName] = useState("");
@@ -206,6 +207,7 @@ export default function SignUp() {
           </div>
         </div>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

@@ -53,6 +53,11 @@ function NavBar() {
                 Material
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/" lassName="nav-links" style={{ color: "white" }}>
+                Sign Out
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

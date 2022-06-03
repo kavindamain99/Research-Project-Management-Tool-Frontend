@@ -3,6 +3,7 @@ import Sidebar from "./core/sidebar";
 import Navbar from "./core/adminNavbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
+import Footer from "./Footer/footer";
 import { VictoryPie } from "victory-pie";
 import { Bar, Pie } from "react-chartjs-2";
 import { Chart, registerables } from "chart.js";
@@ -99,6 +100,7 @@ function Dashboard() {
         </center>
       </Container>
       <Sidebar />
+      <Footer />
     </div>
   );
 }

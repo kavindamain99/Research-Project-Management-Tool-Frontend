@@ -6,6 +6,7 @@ import { API } from "./config";
 import Swal from "sweetalert2";
 import { Link, useParams } from "react-router-dom";
 import { axios } from "axios";
+import Footer from "./Footer/footer";
 
 function DocumentUpdate() {
   const [document, setDocument] = useState([]);
@@ -29,6 +30,7 @@ function DocumentUpdate() {
         style={{ marginTop: "80px", marginRight: "40px", width: "80%" }}
       ></Container>{" "}
       <Sidebar />
+      <Footer />
     </div>
   );
 }

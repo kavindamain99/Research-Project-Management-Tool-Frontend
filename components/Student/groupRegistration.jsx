@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import { API } from "./config";
 const ShortUniqueId = require("short-unique-id");
 import Swal from "sweetalert2";
+import Footer from "./Footer/footer";
 
 export default function GroupRegistration() {
   const uid = new ShortUniqueId({
@@ -154,6 +155,7 @@ export default function GroupRegistration() {
           </section>
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

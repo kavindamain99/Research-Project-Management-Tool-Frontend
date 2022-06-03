@@ -6,6 +6,7 @@ import { API } from "./config";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import { SpinnerCircular } from "spinners-react";
+import Footer from "./Footer/footer";
 
 export default function SubmissionManagement() {
   const [name, setName] = useState("");
@@ -177,6 +178,7 @@ export default function SubmissionManagement() {
         </form>
       </Container>{" "}
       <Sidebar />
+      <Footer />
     </div>
   );
 }

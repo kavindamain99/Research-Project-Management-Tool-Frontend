@@ -4,6 +4,7 @@ import Navbar from "./header/navbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
 import axios from "axios";
+import Footer from "./Footer/footer";
 
 export default function Submission() {
   const [submission, setSubmission] = useState([]);
@@ -142,6 +143,7 @@ export default function Submission() {
       <div style={{ marginTop: "80px" }}>
         <Container>{content}</Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

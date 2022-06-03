@@ -6,6 +6,7 @@ import { API } from "./config";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/footer";
 
 export default function PresentationManagement() {
   const [fileDocument, setFileDocument] = useState({
@@ -173,6 +174,7 @@ export default function PresentationManagement() {
         </form>
       </Container>{" "}
       <Sidebar />
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./header/navbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
+import Footer from "./Footer/footer";
 
 function TopicRegistration() {
   const [groupId, setGroupId] = useState("");
@@ -232,6 +233,7 @@ function TopicRegistration() {
           </div>
         </Container>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

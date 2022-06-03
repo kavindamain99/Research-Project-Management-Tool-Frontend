@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./core/navbar";
 import { API } from "./config";
+import Footer from "./Footer/footer";
 
 export default function SignIn() {
   const [studentId, setStudentId] = useState("");
@@ -96,6 +97,7 @@ export default function SignIn() {
           </div>
         </div>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

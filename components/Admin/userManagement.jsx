@@ -4,6 +4,8 @@ import Navbar from "./core/adminNavbar";
 import { API } from "./config";
 import { Container, Table, Button, Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/footer";
+
 export default function UserManagement() {
   return (
     <div>
@@ -74,6 +76,7 @@ export default function UserManagement() {
         </Row>
       </Container>
       <Sidebar />
+      <Footer />
     </div>
   );
 }

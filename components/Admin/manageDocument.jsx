@@ -5,6 +5,7 @@ import { Container, Table, Button } from "react-bootstrap";
 import { API } from "./config";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/footer";
 
 function ManageDocument() {
   const [submission, setSubmission] = useState([]);
@@ -144,6 +145,7 @@ function ManageDocument() {
         </div>
       </Container>
       <Sidebar></Sidebar>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import Footer from "./Footer/footer";
 
 import Navbar from "./core/adminNavbar";
 function Login(e) {
@@ -17,7 +18,7 @@ function Login(e) {
   return (
     <div>
       <Navbar />
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ marginBottom: "120px" }}>
         <div
           className="card border-dark col-sm-5"
           style={{ marginLeft: "30%", marginTop: "10%" }}
@@ -52,6 +53,7 @@ function Login(e) {
           </div>
         </div>
       </div>{" "}
+      <Footer />
     </div>
   );
 }

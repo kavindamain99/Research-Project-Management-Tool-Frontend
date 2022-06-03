@@ -3,6 +3,8 @@ import Sidebar from "./core/sidebar";
 import Navbar from "./core/adminNavbar";
 import { Container } from "react-bootstrap";
 import { API } from "./config";
+import Footer from "./Footer/footer";
+
 import Swal from "sweetalert2";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -171,6 +173,7 @@ export default function DocumentManagement() {
         </form>
       </Container>{" "}
       <Sidebar />
+      <Footer />
     </div>
   );
 }
