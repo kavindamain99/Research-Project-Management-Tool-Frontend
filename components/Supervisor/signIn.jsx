@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { signIn } from "./Auth/registration";
+import NavBar from "./Core/navBar";
 
 export const SupervisorSignIn = () => {
     const [user, setUser] = useState({
@@ -34,7 +35,7 @@ export const SupervisorSignIn = () => {
             }
             else {
                 window.sessionStorage.setItem("supervisorToken", data.token);
-                window.location.href = '/supervisor/topics';
+                window.location.href = '/supervisor/student/documents';
             }
         }).catch(error => {
             console.log(error);
@@ -45,11 +46,11 @@ export const SupervisorSignIn = () => {
         <section className="vh-100">
             <div className="container py-5 h-100">
                 <div className="row justify-content-center align-items-center h-100">
-                    <div className="col-12 col-lg-9 col-xl-7">
-                        <div className="card shadow-2-strong card-registration" style={{ "borderRadius" : "15px" }}>
+                    <div className="col-12= col-lg-9 col-xl-7">
+                        <div className="card shadow-lg card-registration" style={{ "borderRadius" : "15px" }}>
                             <div className="card-body p-4 p-md-5">
                                 { showError() }
-                                <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" style={{ "textAlign" : "center" }}>Supervisor Sign In</h2>
+                                <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" style={{ "textAlign" : "center"}}>Supervisor Sign In</h2>
                                 <form className="row g-3 needs-validation" noValidate onSubmit={ supervisorSignIn } >
                                     <div className="col-12">
                                         <label htmlFor="email" className="form-label">Email</label>
@@ -58,15 +59,17 @@ export const SupervisorSignIn = () => {
                                             Please provide an email
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <br />
+                                    <div className="col-12">
                                         <label htmlFor="password" className="form-label">Password</label>
                                         <input type="password" className="form-control" id="password" onChange={ handleChange("password") } value={ password } required/>
                                         <div className="invalid-feedback">
                                             Please provide a password
                                         </div>
                                     </div>
-                                    <div className="col-12">
-                                        <button className="btn btn-dark" type="submit">Sign In</button>
+                                    <br />
+                                    <div className="col-12 d-grid gap-2">
+                                        <button className="btn btn-dark btn-block" type="submit">Sign In</button>
                                     </div>
                                 </form>
                             </div>
@@ -103,6 +106,7 @@ export const SupervisorSignIn = () => {
 
     return(
         <div>
+            { NavBar() }
             { signInForm() }
         </div>
     );

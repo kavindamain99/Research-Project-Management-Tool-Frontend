@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { signUp } from "./Auth/registration";
+import NavBar from "./Core/navBar";
 
 export const PanelMemberSignUp = () => {
     const [user, setUser] = useState({
@@ -8,6 +9,7 @@ export const PanelMemberSignUp = () => {
         email : '',
         password : '',
         confirmPassword : '',
+        degree : '',
         contactNumber : '',
     });
 
@@ -19,6 +21,7 @@ export const PanelMemberSignUp = () => {
         email,
         password,
         confirmPassword,
+        degree,
         contactNumber,
     } = user;
 
@@ -27,7 +30,7 @@ export const PanelMemberSignUp = () => {
         setUser({...user, [name] : value});
     };
 
-    const supervisorSignUp = event => {
+    const panelMemberSignUp = event => {
         setError(false);
         event.preventDefault();
         signUp(user).then(data => {
@@ -54,9 +57,9 @@ export const PanelMemberSignUp = () => {
                     <div className="col-12 col-lg-9 col-xl-7">
                         <div className="card shadow-2-strong card-registration" style={{ "borderRadius" : "15px" }}>
                             <div className="card-body p-4 p-md-5">
-                                { showError() }
-                                <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" style={{ "textAlign" : "center" }}>Panel Member Sign Up</h2>
-                                <form className="row g-3 needs-validation" noValidate onSubmit={ supervisorSignUp } >
+                                <form className="row g-3 needs-validation" noValidate onSubmit={ panelMemberSignUp } >
+                                    <h2 className="mb-4 pb-2 pb-md-0 mb-2" style={{ "textAlign" : "center" }}>Panel Member Sign Up</h2>
+                                    { showError() }
                                     <div className="col-md-6">
                                         <label htmlFor="first-name" className="form-label">First name</label>
                                         <input type="text" className="form-control" id="first-name" onChange={ handleChange("firstName") } value={ firstName } required/>
@@ -91,6 +94,15 @@ export const PanelMemberSignUp = () => {
                                         <div className="invalid-feedback">
                                             Please provide a password
                                         </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <label htmlFor="degree" className="form-label">Faculty</label>
+                                        <select id="degree" className="form-select" onChange={ handleChange("degree") } required>
+                                            <option selected disabled value="none">Choose...</option>
+                                            <option value="computing">Faculty of Computing</option>
+                                            <option value="engineering">Faculty of Engineering</option>
+                                            <option value="business">Faculty of Business</option>
+                                        </select>
                                     </div>
                                     <div className="col-md-6">
                                         <label htmlFor="contact-number" className="form-label">Contact number</label>
@@ -137,6 +149,7 @@ export const PanelMemberSignUp = () => {
 
     return(
         <div>
+            { NavBar() }
             { signUpForm() }
         </div>
     );

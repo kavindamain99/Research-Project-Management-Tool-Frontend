@@ -34,10 +34,11 @@ export const getTopic = async (id) => {
 
 export const evaluateTopic = async (id, evaluation) => {
     try {
-        const response = await fetch(`${ API }/supervisor/topic/${ id }`, {
+        evaluation = JSON.stringify(evaluation);
+        const response = await fetch(`${ API }/panelmember/topic/${ id }`, {
             method : "PUT",
             headers : {
-                authorization : window.sessionStorage.getItem("supervisorToken")
+                authorization : window.sessionStorage.getItem("panelMemberToken")
             },
             body : evaluation
         });

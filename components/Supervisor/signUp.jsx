@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { signUp } from "./Auth/registration";
+import NavBar from "./Core/navBar";
 
 export const SupervisorSignUp = () => {
     const [user, setUser] = useState({
@@ -10,6 +11,7 @@ export const SupervisorSignUp = () => {
         password : '',
         confirmPassword : '',
         field : '',
+        degree : '',
         contactNumber : '',
     });
 
@@ -23,6 +25,7 @@ export const SupervisorSignUp = () => {
         password,
         confirmPassword,
         field,
+        degree,
         contactNumber,
     } = user;
 
@@ -56,11 +59,11 @@ export const SupervisorSignUp = () => {
             <div className="container py-5 h-100">
                 <div className="row justify-content-center align-items-center h-100">
                     <div className="col-12 col-lg-9 col-xl-7">
-                        <div className="card shadow-2-strong card-registration" style={{ "borderRadius" : "15px" }}>
+                        <div className="card shadow-lg card-registration" style={{ "borderRadius" : "15px" }}>
                             <div className="card-body p-4 p-md-5">
-                                { showError() }
-                                <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" style={{ "textAlign" : "center" }}>Supervisor Sign Up</h2>
                                 <form className="row g-3 needs-validation" noValidate onSubmit={ supervisorSignUp } >
+                                    <h2 className="mb-4 pb-2 pb-md-0 mb-2" style={{ "textAlign" : "center" }}>Supervisor Sign Up</h2>
+                                    { showError() }
                                     <div className="col-md-6">
                                         <label htmlFor="first-name" className="form-label">First name</label>
                                         <input type="text" className="form-control" id="first-name" onChange={ handleChange("firstName") } value={ firstName } required/>
@@ -106,13 +109,29 @@ export const SupervisorSignUp = () => {
                                         <input type="radio" className="form-check-input" id="role-co-supervisor" name="radio-stacked" onChange={ handleChange("role") } value="co-supervisor" required />
                                         <label className="form-check-label" htmlFor="role-co-supervisor" style={{ "marginLeft" : "5px" }}>Co-supervisor</label>
                                     </div>
-                                    <div className="col-12">
+                                    <div className="col-md-6">
                                         <label htmlFor="field" className="form-label">Field</label>
                                         <select id="field" className="form-select" onChange={ handleChange("field") } required>
+                                            <option selected disabled value="none">Choose...</option>
+                                            <option value="IOT">Internet of Things</option>
+                                            <option value="Machine Learning">Machine Learning</option>
+                                            <option value="Computational biology">Computational Biology</option>
+                                            <option value="Data Mining">Data Mining</option>
+                                            <option value="HCI">Human Computer Interactions</option>
+                                            <option value="Economics">Economics</option>
+                                            <option value="Commerce">Commerce</option>
+                                            <option value="Materials and Structures">Materials and Structures</option>
+                                            <option value="Aerodynamics">Aerodynamics</option>
+                                            <option value="Energy Systems"></option>
+                                        </select>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <label htmlFor="degree" className="form-label">Faculty</label>
+                                        <select id="degree" className="form-select" onChange={ handleChange("degree") } required>
                                             <option selected disabled value="none" key="default">Choose...</option>
-                                            <option value="Artificial Intelligence" key="AI">Artificial Intelligence</option>
-                                            <option value="Blockchain" key="BC">Blockchain</option>
-                                            <option value="IoT" key="IoT">Internet of Things</option>
+                                            <option value="computing">Faculty of Computing</option>
+                                            <option value="engineering">Faculty of Engineering</option>
+                                            <option value="business">Faculty of Business</option>
                                         </select>
                                     </div>
                                     <div className="col-md-6">
@@ -122,7 +141,7 @@ export const SupervisorSignUp = () => {
                                             Please provide a contact number
                                         </div>
                                     </div>
-                                    <div className="col-12">
+                                    <div className="col-12 d-grid gap-2">
                                         <button className="btn btn-dark" type="submit">Sign Up</button>
                                     </div>
                                 </form>
@@ -147,6 +166,7 @@ export const SupervisorSignUp = () => {
               if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()
+                setError("All fields must be filled");
               }
       
               form.classList.add('was-validated')
@@ -162,6 +182,7 @@ export const SupervisorSignUp = () => {
 
     return(
         <div>
+            { NavBar() }
             { signUpForm() }
         </div>
     );

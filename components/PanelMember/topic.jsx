@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
+import { getTopic, evaluateTopic } from "./Auth/topics";
 import { useParams } from "react-router-dom";
-import { getTopic, updateState } from "./Auth/topics";
+import Swal from 'sweetalert2'
 import MainNavBar from "./Core/mainNavBar";
 import Footer from "./Core/footer";
-import Swal from 'sweetalert2'
 
-export const SupervisorTopic = () => {
+export const PanelMemberTopic = () => {
     const { id } = useParams();
 
     const [topic, setTopic] = useState({});
+    const [evaluation, setEvaluation] = useState({});
     const [error, setError] = useState(false);
 
     const loadTopic = async () => {
         try {
-            const topic = await getTopic(id)
+            const topic = await getTopic(id);
             if(topic.error) {
                 if(topic.message) {
                     setError(topic.message);
@@ -35,18 +36,21 @@ export const SupervisorTopic = () => {
         loadTopic();
     }, []);
 
-    const updateTopicState = (state) => {
-        setError(false);
-        const textState = state.charAt(0).toUpperCase() + state.substring(0, 6).slice(1)
+    const handleChange = event => {
+        const value = event.target.value;
+        setEvaluation(value);
+    };
+
+    const panelMemberEvaluateTopic = () => {
         Swal.fire({
-            title : "Confirm " + textState,
+            title : "Confirm evaluation",
             icon : "warning",
             showCancelButton : true,
-            confirmButtonText : textState,
+            confirmButtonText : "Evaluate",
             confirmButtonColor : "#df4759"
         }).then(result => {
             if(result.isConfirmed) {
-                updateState(id, state).then(topic => {
+                evaluateTopic(id, evaluation).then(topic => {
                     if(topic.error) {
                         if(topic.message) {
                             setError(topic.message);
@@ -57,9 +61,9 @@ export const SupervisorTopic = () => {
                     }
                     else {
                         Swal.fire(
-                            textState + "ed",
-                            'Topic ' + textState + "ed",
-                            'success'
+                            "Evaluated",
+                            "Topic succesfully evaluated",
+                            "success"
                         );
                     }
                 }).catch(error => {
@@ -67,36 +71,6 @@ export const SupervisorTopic = () => {
                 });
             }
         });
-    };
-
-    const showError = () => error && (
-        <div className="alert alert-danger" role="alert" style={{ "height" : "40px", "line-height" : "40px", "padding" : "0px 15px" }}>
-            { error }
-        </div>
-    );
-
-    const dynamicSupervisor = () => {
-        if(topic.state && topic.state === "accepted") {
-            return(
-                <div>
-                    <h5>Accepted by,</h5>
-                    <p>{ topic.supervisorName }</p>
-                    <p>{ topic.supervisorId }</p>
-                    <p>{ topic.role }</p>
-                </div>
-            );
-        }
-
-        if(topic.state && topic.state === "rejected") {
-            return(
-                <div>
-                    <h5>Rejected by,</h5>
-                    <p>{ topic.supervisorName }</p>
-                    <p>{ topic.supervisorId }</p>
-                    <p>{ topic.role }</p>
-                </div>
-            );
-        }
     };
 
     const dynamicPanelMember = () => {
@@ -111,31 +85,11 @@ export const SupervisorTopic = () => {
         }
     };
 
-    const dynamic = () => {
-        if(topic.state && topic.state === "pending") {
-            return(
-                <div className="d-grid gap-2">
-                    <button className="btn btn-dark" onClick={ () => { updateTopicState("accepted") } }>Accept</button>
-                    <button className="btn btn-danger" onClick={ () => { updateTopicState("rejected") } }>Reject</button>
-                </div>
-            );
-        }
-
-        if(topic.state && topic.state === "accepted"  && topic.evaluated === false) {
-            return(
-                <div className="d-grid gap-2">
-                    <button className="btn btn-danger" onClick={ () => { updateTopicState("rejected") } }>Reject</button>
-                </div>
-            );
-        }
-        if(topic.state && topic.state === "rejected") {
-            return(
-                <div className="d-grid gap-2">
-                    <button className="btn btn-dark" onClick={ () => { updateTopicState("accepted") } }>Accept</button>
-                </div>
-            );
-        }
-    }
+    const showError = () => error && (
+        <div className="alert alert-danger" role="alert" style={{ "height" : "40px", "line-height" : "40px", "padding" : "0px 15px" }}>
+            { error }
+        </div>
+    );
 
     const viewTopic = () => !error && (
         <div>
@@ -150,22 +104,29 @@ export const SupervisorTopic = () => {
                                     <br />
                                     <div className="row">
                                         <div className="col-sm-6">
-                                        <h5>Group ID</h5>
+                                            <h5>Group ID</h5>
                                             <p>{ topic.groupId }</p>
                                             <h5>Field</h5>
                                             <p>{ topic.field }</p>
                                         </div>
                                         <div className="col-sm-3">
-                                            { dynamicSupervisor() }
+                                            <h5>Accepted By,</h5>
+                                            <p>{ topic.supervisorName }</p>
+                                            <p>{ topic.supervisorId }</p>
+                                            <p>{ topic.role }</p>
                                         </div>
                                         <div className="col-sm-3">
                                             { dynamicPanelMember() }
                                         </div>
                                         <h5>Description</h5>
                                         <p>{ topic.description }</p>
-                                        <br />
-                                        { dynamic() }
-                                    </div>                           
+                                    </div>
+                                    <br />
+                                    <h5>Evaluation</h5>
+                                    <div className="mb-4">
+                                        <textarea className="w-100" rows="8" onChange={ handleChange }></textarea>
+                                    </div>
+                                    <button className="btn btn-danger btn-block" onClick={ () => { panelMemberEvaluateTopic() } }>Evaluate</button>
                                 </div>
                             </div>
                         </div>
@@ -184,4 +145,4 @@ export const SupervisorTopic = () => {
     );
 };
 
-export default SupervisorTopic;
+export default PanelMemberTopic;

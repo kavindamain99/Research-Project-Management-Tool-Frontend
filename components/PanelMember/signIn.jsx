@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { signIn } from "./Auth/registration";
+import NavBar from "./Core/navBar";
 
 export const PanelMemberSignIn = () => {
     const [user, setUser] = useState({
@@ -34,7 +35,7 @@ export const PanelMemberSignIn = () => {
             }
             else {
                 window.sessionStorage.setItem("panelMemberToken", data.token);
-                window.location.href = '/panelmember/topics';
+                window.location.href = '/panelmember/documents';
             }
         }).catch(error => {
             console.log(error);
@@ -103,6 +104,7 @@ export const PanelMemberSignIn = () => {
 
     return(
         <div>
+            { NavBar() }
             { signInForm() }
         </div>
     );

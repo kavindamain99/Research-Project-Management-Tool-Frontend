@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { getTopics } from "./Auth/topics";
 import { Link } from "react-router-dom";
+import MainNavBar from "./Core/mainNavBar";
+import Footer from "./Core/footer";
 import "./styles.css"
 
 export const SupervisorTopics = () => {
@@ -44,8 +46,28 @@ export const SupervisorTopics = () => {
         loadTopics("rejected");
     }, []);
 
-    const viewTopics = () => (
-        <div className="row mt-4" style={{ "marginLeft" : "12%", "marginRight" : "12%" }}>
+    const createdDateTime = (topic) => {
+        if(topic.createdAt) {
+            const date = topic.createdAt.substring(0, 10);
+            const time = topic.createdAt.substring(11, 19);
+            return (`on ${ date } at ${ time }`);
+        }
+        return;
+    };
+
+    const updatedDateTime = (topic) => {
+        if(topic.updatedAt) {
+            const date = topic.updatedAt.substring(0, 10);
+            const time = topic.updatedAt.substring(11, 19);
+            return (`on ${ date } at ${ time }`);
+        }
+        return;
+    };
+
+    const viewTopics = ()  => !error && (
+        <div>
+            { MainNavBar() }
+            <div className="row mt-4" style={{ "marginLeft" : "12%", "marginRight" : "12%" }}>
             <div className="col" style={{ "overflow-y" : "hidden" }}>
                 <span className="badge bg-primary col-md-11">
                     <h4>Pending</h4>
@@ -56,7 +78,9 @@ export const SupervisorTopics = () => {
                 { pendingTopics.map((topic) => (
                     <div className="card shadow p-2 mt-1 mb-1" key={ topic.id }>
                         <h4 className="card-title">{ topic.topic }</h4>
-                        <div className="card-text">{ topic.description }</div>
+                        <div className="card-text l3-ellipsis">{ topic.description }</div>
+                        <br />
+                        <small className="text-muted">Submitted { createdDateTime(topic) }</small>
                         <Link to={ `/supervisor/topic/${ topic.topicId }` }>
                             <button className="btn btn-secondary mt-2 mb-2 ml-2">View details</button>
                         </Link>
@@ -75,7 +99,9 @@ export const SupervisorTopics = () => {
                 { acceptedTopics.map((topic) => (
                     <div className="card shadow p-2 mt-1 mb-1" key={ topic.id }>
                         <h4 className="card-title">{ topic.topic }</h4>
-                        <div className="card-text">{ topic.description }</div>
+                        <div className="card-text l3-ellipsis mb-2">{ topic.description }</div>
+                        <small className="text-muted">Submitted { createdDateTime(topic) }</small>
+                        <small className="text-muted">Accepted { updatedDateTime(topic) }</small>
                         <Link to={ `/supervisor/topic/${ topic.topicId }` }>
                             <button className="btn btn-secondary mt-2 mb-2 ml-2">View details</button>
                         </Link>
@@ -92,13 +118,17 @@ export const SupervisorTopics = () => {
                 { rejectedTopics.map((topic) => (
                     <div className="card shadow p-2 mt-1 mb-1" key={ topic.id }>
                         <h4 className="card-title">{ topic.topic }</h4>
-                        <div className="card-text">{ topic.description }</div>
+                        <div className="card-text l3-ellipsis mb-2">{ topic.description }</div>
+                        <small className="text-muted">Submitted { createdDateTime(topic) }</small>
+                        <small className="text-muted">Rejected { updatedDateTime(topic) }</small>
                         <Link to={ `/supervisor/topic/${ topic.topicId }` }>
                             <button className="btn btn-secondary mt-2 mb-2 ml-2">View details</button>
                         </Link>
                     </div>
                 )) }
             </div>
+            </div>
+            { Footer() }
         </div>
     );
 
