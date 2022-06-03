@@ -25,7 +25,7 @@ export default function SignIn() {
         window.localStorage.setItem("studentToken", resJson.token);
         window.localStorage.setItem("user", studentId);
 
-        window.location.href = "/group/registration";
+        window.location.href = "/home";
       }
     } catch (error) {
       console.log(error);
