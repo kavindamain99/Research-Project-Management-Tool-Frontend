@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build "
+    "build": "parcel build index.html",
+    "heroku-postbuild": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
@@ -26,11 +27,9 @@
     "spinners-react": "^1.0.7",
     "sweetalert2": "^11.4.17",
     "sweetalert2-react": "^0.8.3",
-    "victory-pie": "^36.4.1"
-  },
-  "devDependencies": {
+    "victory-pie": "^36.4.1",
+    "parcel": "^2.0.0-rc.0",
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
   }
 }
